@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body,
+  html {
+    @apply h-full;
+  }
+  main {
+    @apply h-full;
+  }
+}
+
+div#__next {
+  height: 100%;
+}
+
+.mobile_navbar {
+  transform: translateX(0px) !important;
+  transition: 0.5s all ease !important;
+}
+.bg_gradient {
+  background: linear-gradient(0deg, #001354, #001354), #001c80;
+}
+.bg_gradient2 {
+  background: linear-gradient(0deg, #001767, #001767), #001c80;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: 'next';
+  font-size: 36px !important;
+}
+@layer components {
+  .container {
+    @apply px-5 lg:px-16 mx-auto;
+  }
+  .btn_primary {
+    @apply bg-[#4E2FFF] hover:bg-opacity-75 px-4 py-2 text-white rounded-[47px];
+  }
+  .bg_2 {
+    background: linear-gradient(0deg, #001047, #001047), #001c80;
+  }
+  #why_us {
+    @apply w-full bg-why_us_bg h-screen bg-no-repeat bg-cover lg:min-h-[1055px] 2xl:min-h-[1200px]  xl:min-h-[1155.1px];
+  }
+  .shadow_sm {
+    box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.25);
+  }
+  .services {
+    @apply w-full h-full bg-no-repeat bg-contain min-h-[810px] bg-services_bg;
+  }
+}
