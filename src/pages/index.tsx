@@ -12,6 +12,7 @@ import Community from '@/components/Community';
 
 import Services from '@/components/Services';
 import MobileMenu from '@/components/MobileHeader';
+import TeamMobile from '@/components/TeamMobile';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -36,6 +37,7 @@ export default function Home() {
         <Services />
         <Events />
         <Team />
+        <TeamMobile />
         <ConnectUs />
         <Footer />
       </main>

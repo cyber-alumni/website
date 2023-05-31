@@ -39,7 +39,7 @@ div#__next {
     @apply px-5 lg:px-16 mx-auto;
   }
   .btn_primary {
-    @apply bg-[#4E2FFF] hover:bg-opacity-75 px-4 py-2 text-white rounded-[47px];
+    @apply bg-[#4E2FFF] hover:bg-opacity-75 px-4 py-3 text-white rounded-[16px];
   }
   .bg_2 {
     background: linear-gradient(0deg, #001047, #001047), #001c80;
@@ -51,6 +51,9 @@ div#__next {
     box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.25);
   }
   .services {
-    @apply w-full h-full bg-no-repeat bg-contain min-h-[810px] bg-services_bg;
+    @apply w-full h-full bg-no-repeat bg-contain min-h-[810px] md:!min-h-[200px] bg-services_bg;
+  }
+  .bg-gradient {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   }
 }

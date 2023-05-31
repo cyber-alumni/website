@@ -35,18 +35,28 @@ const Services = () => {
           <Image src={s5} width={160} alt="Tarif" />
         </div>
       </div>
-      <div className=" lg:hidden services relative    py-10 ">
+      <div className=" lg:hidden services min-w-[100vw] relative    py-10 ">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
           freeMode={true}
           navigation={true}
           modules={[FreeMode, Navigation]}
-          className="  grid-rows-1 absolute top-[13%] overflow-x-scroll grid grid-cols-4 gap-4"
+          className="  grid-rows-1 absolute   w-full top-[13%] md:top-[25%] overflow-x-scroll grid grid-cols-4 gap-4"
         >
           {communityData.map((data, key) => (
-            <SwiperSlide key={key}>
-              <Image src={data} className=" w-full object-cover" alt="tarif" />
+            <SwiperSlide key={key} className="w-full h-full">
+              <div className=" relative w-[120px] h-[120px] h-ful z-50 bg-gradient rounded-xl ">
+                <Image
+                  src={data.image}
+                  className=" w-full h-full   rounded-xl object-cover"
+                  alt="ComminityDataimg1"
+                />
+                <div className=" absolute h-[120px]  w-full top-0 bg-gradient rounded-xl "></div>
+                <h2 className=" text-sm text-white font-extrabold absolute  top-[70%]  text-center w-full">
+                  {data.name}
+                </h2>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

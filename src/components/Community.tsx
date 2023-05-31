@@ -50,22 +50,73 @@ const Community = () => {
       </div>
       {/*  */}
       <div className="relative">
-        <div className="  container place-items-center gap-6 mt-auto lg:mt-[28%] xl:mt-[25%] 2xl:mt-[20%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
-          <div className=" relative z-50">
-            <Image src={ComminityDataimg1} alt="ComminityDataimg1" />
+        <div className="  container  gap-6 mt-auto lg:mt-[28%] xl:mt-[25%] 2xl:mt-[20%]   grid grid-cols-5">
+          <div
+            style={{
+              backgroundImage: `url(${ComminityDataimg1})`,
+            }}
+            className=" relative  z-50 bg-gradient rounded-xl h-[292px]"
+          >
+            <Image
+              src={ComminityDataimg1}
+              className=" w-full h-full  rounded-xl object-cover"
+              alt="ComminityDataimg1"
+            />
+            <div className=" absolute w-full top-0 bg-gradient rounded-xl h-[292px]"></div>
+            <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
+              פרויקטים לקהילה
+            </h2>
           </div>
-          <div className=" relative z-50">
-            <Image src={ComminityDataimg2} alt="ComminityDataimg2" />
+          <div
+            style={{
+              backgroundImage: `url(${ComminityDataimg2})`,
+            }}
+            className=" relative  z-50 bg-gradient rounded-xl h-[292px]"
+          >
+            <Image
+              src={ComminityDataimg2}
+              className=" w-full h-full  rounded-xl object-cover"
+              alt="ComminityDataimg1"
+            />
+            <div className=" absolute w-full top-0 bg-gradient rounded-xl h-[292px]"></div>
+            <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
+              נטוורקינג
+            </h2>
           </div>
-          <div className=" relative z-50">
-            <Image src={ComminityDataimg3} alt="ComminityDataimg3" />
+          <div className=" relative  z-50 bg-gradient rounded-xl h-[292px]">
+            <Image
+              src={ComminityDataimg3}
+              className=" w-full h-full  rounded-xl object-cover"
+              alt="ComminityDataimg1"
+            />
+            <div className=" w-full absolute top-0 bg-gradient rounded-xl h-[292px]"></div>
+            <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
+              חיבור למשקיעים
+            </h2>
           </div>
-          <div className=" relative z-50">
-            <Image src={ComminityDataimg4} alt="ComminityDataimg4" />
+          <div className=" relative  z-50 bg-gradient rounded-xl h-[292px]">
+            <Image
+              src={ComminityDataimg4}
+              className=" w-full h-full  rounded-xl object-cover"
+              alt="ComminityDataimg1"
+            />
+            <div className=" w-full absolute top-0 bg-gradient rounded-xl h-[292px]"></div>
+            <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
+              הכשרה וקורסים
+            </h2>
           </div>
-          <div className=" relative z-50">
-            <Image src={ComminityDataimg5} alt="ComminityDataimg5" />
+          <div className=" relative  z-50 bg-gradient rounded-xl h-[292px]">
+            <Image
+              src={ComminityDataimg4}
+              className=" w-full h-full  rounded-xl object-cover"
+              alt="ComminityDataimg1"
+            />
+            <div className=" w-full absolute top-0 bg-gradient rounded-xl h-[292px]"></div>
+            <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
+              שירותי ייעוץ בחינם
+            </h2>
           </div>
+
           <div className="absolute z-10">
             <Image src={bg} alt="bg" />
           </div>
