@@ -11,28 +11,28 @@ import 'swiper/css/navigation';
 // import required modules
 import { FreeMode, Navigation } from 'swiper';
 
-import s1 from '../svg/sponsars/mobile/1.svg';
-import s2 from '../svg/sponsars/mobile/2.svg';
-import s3 from '../svg/sponsars/mobile/3.svg';
-import s4 from '../svg/sponsars/mobile/4.svg';
-import s5 from '../svg/sponsars/mobile/5.svg';
+import matzov from '../svg/units/mobile/matzov.svg';
+import electronic from '../svg/units/mobile/electronic.svg';
+import hativa from '../svg/units/mobile/hativa.svg';
+import intelligence from '../svg/units/mobile/intelligence.svg';
+import operations from '../svg/units/mobile/operations.svg';
 const Services = () => {
-  const sponsars = [s1, s2, s3, s4, s5];
+  const units = [matzov, electronic, hativa, intelligence, operations];
 
   return (
     <>
       <div className="px-4 pt-6 lg:hidden space-y-4">
         <div className="flex items-center justify-between">
-          <Image src={s1} width={160} alt="Tarif" />
-          <Image src={s2} width={160} alt="Tarif" />
+          <Image src={matzov} width={160} alt="Tarif" />
+          <Image src={hativa} width={160} alt="Tarif" />
         </div>
         <div className="flex items-center justify-between">
-          <Image src={s3} width={160} alt="Tarif" />
-          <Image src={s4} width={160} alt="Tarif" />
+          <Image src={operations} width={160} alt="Tarif" />
+          <Image src={intelligence} width={160} alt="Tarif" />
         </div>
         <div className="flex items-center justify-between">
           <p></p>
-          <Image src={s5} width={160} alt="Tarif" />
+          <Image src={electronic} width={160} alt="Tarif" />
         </div>
       </div>
       <div className=" lg:hidden services min-w-[100vw] relative    py-10 ">

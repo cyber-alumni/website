@@ -4,11 +4,10 @@ import Image from 'next/image';
 
 import bg from '../img/bg.png';
 
-import s1 from '../svg/sponsars/1.svg';
-import s2 from '../svg/sponsars/2.svg';
-import s3 from '../svg/sponsars/3.svg';
-import s4 from '../svg/sponsars/4.svg';
-import s5 from '../svg/sponsars/5.svg';
+import agaf from '../svg/units/agaf.svg';
+import hativa from '../svg/units/hativa.svg';
+import electronic from '../svg/units/electronic.svg';
+import matzov from '../svg/units/matzov.svg';
 
 import ComminityDataimg1 from '../svg/services/1.svg';
 import ComminityDataimg2 from '../svg/services/2.svg';
@@ -38,13 +37,13 @@ const Community = () => {
       <div className="absolute  lg:top-[6%] 2xl:top-[10%] w-full">
         <div className=" flex gap-y-6  items-center flex-col  container ">
           <div className="flex items-center gap-6">
-            <Card name="מרכז מודיעין להגנה" png={s1} />
-            <Card name="חטיבת ההגנה בסייבר" png={s2} />
-            <Card name="מרכז צופן ובטחון (מצו”ב)" png={s3} />
+            <Card name="מרכז מודיעין להגנה" png={agaf} />
+            <Card name="חטיבת ההגנה בסייבר" png={hativa} />
+            <Card name="מרכז צופן ובטחון (מצו”ב)" png={matzov} />
           </div>
           <div className="flex justify-center items-center gap-6">
-            <Card name="מרכז מבצעים להגנה" png={s4} />
-            <Card name="מרכז לוחמה אלקטרונית" png={s5} />
+            <Card name="מרכז מבצעים להגנה" png={agaf} />
+            <Card name="מרכז לוחמה אלקטרונית" png={electronic} />
           </div>
         </div>
       </div>
