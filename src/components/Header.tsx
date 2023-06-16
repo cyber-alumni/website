@@ -14,7 +14,7 @@ const Header = () => {
         <div>
           <ul className="flex items-center text-base  font-medium  gap-x-6">
             <li>
-              <button className="btn_primary">בוגרים? הצטרפו בחינ6</button>
+              <button className="btn_primary">בוגרים? לחצו להרשמה</button>
             </li>
             <li>
               <Link href={'#why_us'}>למה להצטרף</Link>

@@ -149,31 +149,31 @@ export const EventsData: Events[] = [
   },
 ];
 
-import comminityDataimg1 from '../svg/services/1.svg';
-import comminityDataimg2 from '../svg/services/2.svg';
-import comminityDataimg3 from '../svg/services/3.svg';
-import comminityDataimg4 from '../svg/services/4.svg';
-import comminityDataimg5 from '../svg/services/5.svg';
+import CommunityDataimg1 from '../svg/services/1.svg';
+import CommunityDataimg2 from '../svg/services/2.svg';
+import CommunityDataimg3 from '../svg/services/3.svg';
+import CommunityDataimg4 from '../svg/services/4.svg';
+import CommunityDataimg5 from '../svg/services/5.svg';
 
 export const communityData: any[] = [
   {
-    image: comminityDataimg1,
+    image: CommunityDataimg1,
     name: 'פרויקטים לקהילה',
   },
   {
-    image: comminityDataimg2,
+    image: CommunityDataimg2,
     name: 'נטוורקינג',
   },
   {
-    image: comminityDataimg3,
+    image: CommunityDataimg3,
     name: 'חיבור למשקיעים',
   },
   {
-    image: comminityDataimg4,
+    image: CommunityDataimg4,
     name: 'הכשרה וקורסים',
   },
   {
-    image: comminityDataimg4,
+    image: CommunityDataimg4,
     name: 'שירותי ייעוץ בחינם',
   },
 ];

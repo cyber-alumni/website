@@ -7,12 +7,16 @@
   body,
   html {
     @apply h-full;
+    font-family: 'Open Sans', sans-serif;
   }
   main {
     @apply h-full;
   }
 }
-
+.rtl{
+  direction: rtl;
+  float: right;
+}
 div#__next {
   height: 100%;
 }

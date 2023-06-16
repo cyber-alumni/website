@@ -50,7 +50,7 @@ const Services = () => {
                 <Image
                   src={data.image}
                   className=" w-full h-full   rounded-xl object-cover"
-                  alt="ComminityDataimg1"
+                  alt="CommunityDataimg1"
                 />
                 <div className=" absolute h-[120px]  w-full top-0 bg-gradient rounded-xl "></div>
                 <h2 className=" text-sm text-white font-extrabold absolute  top-[70%]  text-center w-full">
@@ -104,7 +104,7 @@ const Services = () => {
               <h2 className=" text-2xl font-bold font-openSens text-right">
                 עבור המערך
               </h2>
-              <p className="text-sm pt-2 text-right font-openSens font-normal">
+              <p className="text-sm pt-2 text-right font-openSans font-normal">
                 אין זה ראוי העמותה תשמר ותטפח את המורשת ואת הערכים אשר מושרשים
                 במערך. העמותה מעודדת ומעודדת פעילויות מילואים שונות, כמו כן
                 עובדת עם מערכי החינוך והמורשת ביחידות על מנת להנגיש לכלל החברה
