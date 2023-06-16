@@ -18,7 +18,7 @@ const Events = () => {
               className="flex lg:max-h-[240px] px-0 overflow-hidden lg:pl-5 pr-0 rounded-2xl border bg-[#ffff] border-[#D9D9D9] items-center justify-between"
             >
               <div className=" hidden lg:block">
-                <button className="px-5  text-base font-bold font-inter py-2.5 rounded-3xl border border-black">
+                <button className="px-5 hover:bg-blue-200 text-base font-bold font-inter py-2.5 rounded-3xl border border-black">
                   הרשמה
                 </button>
               </div>

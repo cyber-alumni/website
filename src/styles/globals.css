@@ -15,7 +15,6 @@
 }
 .rtl{
   direction: rtl;
-  float: right;
 }
 div#__next {
   height: 100%;
