@@ -9,15 +9,10 @@ import hativa from '../svg/units/hativa.svg';
 import electronic from '../svg/units/electronic.svg';
 import matzov from '../svg/units/matzov.svg';
 
-import CommunityDataimg1 from '../svg/services/hands_light.svg';
-import CommunityDataimg2 from '../svg/services/desk_folders.svg';
-import CommunityDataimg3 from '../svg/services/rich_man.svg';
-import CommunityDataimg4 from '../svg/services/teacher_class.svg';
-import CommunityDataimg5 from '../svg/services/5.svg';
+import {communityData} from "@/data";
 
 interface CardProps {
     name: string;
-
     png: any;
 }
 
@@ -31,12 +26,9 @@ const Card: React.FC<CardProps> = ({ name, png }) => (
 );
 
 
-const Community = () => {
+const UnitsFieldsServices = () => {
     return (
-        <section
-            id="why_us"
-            className="relative hidden lg:flex  flex-col gap-10 overflow-hidden   "
-        >
+        <section id="units" className="relative hidden lg:flex  flex-col gap-10 overflow-hidden">
             <div className="absolute  lg:top-[6%] 2xl:top-[10%] w-full">
                 <div className=" flex gap-y-6  items-center flex-col  container ">
                     <div className="flex items-center gap-6">
@@ -50,74 +42,26 @@ const Community = () => {
                     </div>
                 </div>
             </div>
-            {/*  */}
             <div className="relative">
                 <div className="container font-openSans gap-6 mt-auto lg:mt-[28%] xl:mt-[25%] 2xl:mt-[20%]   grid grid-cols-5">
-                    <div
-                        style={{
-                            backgroundImage: `url(${CommunityDataimg1})`,
-                        }}
-                        className=" relative  z-50 bg-gradient rounded-xl h-[292px]"
-                    >
-                        <Image
-                            src={CommunityDataimg1}
-                            className=" w-full h-full  rounded-xl object-cover"
-                            alt="CommunityDataimg1"
-                        />
-                        <div className=" absolute w-full top-0 bg-gradient rounded-xl h-[292px]"></div>
-                        <h2 className=" text-3xl text-white font-extrabold absolute top-[80%] text-center w-full">
-                            פרויקטים לקהילה
-                        </h2>
-                    </div>
-                    <div
-                        style={{
-                            backgroundImage: `url(${CommunityDataimg2})`,
-                        }}
-                        className=" relative  z-50 bg-gradient rounded-xl h-[292px]"
-                    >
-                        <Image
-                            src={CommunityDataimg2}
-                            className=" w-full h-full  rounded-xl object-cover"
-                            alt="CommunityDataimg1"
-                        />
-                        <div className=" absolute w-full top-0 bg-gradient rounded-xl h-[292px]"></div>
-                        <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
-                            נטוורקינג
-                        </h2>
-                    </div>
-                    <div className=" relative  z-50 bg-gradient rounded-xl h-[292px]">
-                        <Image
-                            src={CommunityDataimg3}
-                            className=" w-full h-full  rounded-xl object-cover"
-                            alt="CommunityDataimg1"
-                        />
-                        <div className=" w-full absolute top-0 bg-gradient rounded-xl h-[292px]"></div>
-                        <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
-                            חיבור למשקיעים
-                        </h2>
-                    </div>
-                    <div className=" relative  z-50 bg-gradient rounded-xl h-[292px]">
-                        <Image
-                            src={CommunityDataimg4}
-                            className=" w-full h-full  rounded-xl object-cover"
-                            alt="CommunityDataimg1"
-                        />
-                        <div className=" w-full absolute top-0 bg-gradient rounded-xl h-[292px]"></div>
-                        <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
-                            הכשרה וקורסים
-                        </h2>
-                    </div>
-                    <div className=" relative  z-50 bg-gradient rounded-xl h-[292px]">
-                        <Image
-                            src={CommunityDataimg4}
-                            className=" w-full h-full  rounded-xl object-cover"
-                            alt="CommunityDataimg1"
-                        />
-                        <div className=" w-full absolute top-0 bg-gradient rounded-xl h-[292px]"></div>
-                        <h2 className=" text-3xl text-white font-extrabold absolute  top-[80%]  text-center w-full">
-                            שירותי ייעוץ בחינם
-                        </h2>
-                    </div>
+                      {communityData.map((data, key) => (
+                            <div
+                                style={{
+                                    backgroundImage: `url("{data.image}")`,
+                                }}
+                                className=" relative  z-50 bg-gradient rounded-xl h-[292px]"
+                            >
+                                <Image
+                                    src={{data.image}}
+                                    className=" w-full h-full  rounded-xl object-cover"
+                                    alt="CommunityDataimg1"
+                                />
+                                <div className=" absolute w-full top-0 bg-gradient rounded-xl h-[292px]"></div>
+                                <h2 className=" text-3xl text-white font-extrabold absolute top-[80%] text-center w-full">
+                                    {data.name}
+                                </h2>
+                            </div>
+                      ))}
 
                     <div className="absolute z-10">
                         <Image src={bg} alt="bg"/>
@@ -163,4 +107,4 @@ const Community = () => {
     );
 };
 
-export default Community;
+export default UnitsFieldsServices;

@@ -4,7 +4,7 @@ import { LogoDark } from './Logo';
 
 const Header = () => {
   return (
-    <header className=" hidden lg:block container py-6 bg-white">
+    <header className="hidden lg:block container py-6 bg-white">
       <div className="flex items-center justify-between">
         <div className=" order-last">
           <Link href={'/'}>
@@ -20,7 +20,7 @@ const Header = () => {
               <Link href={'#why_us'}>למה להצטרף</Link>
             </li>
             <li>
-              <Link href={'#אודות_מערך_הסייבר'}>אודות מערך הסייבר</Link>
+              <Link href={'#intro'}>אודות העמותה</Link>
             </li>
           </ul>
         </div>

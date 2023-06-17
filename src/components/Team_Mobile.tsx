@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 import { teamData } from '@/data';
 
-const TeamMobile = () => {
+const Team_Mobile = () => {
   const [selectedValue, setSelectedValue] = useState<string>('leaders');
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -95,4 +95,4 @@ const TeamMobile = () => {
   );
 };
 
-export default TeamMobile;
+export default Team_Mobile;

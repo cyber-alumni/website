@@ -16,7 +16,7 @@ import electronic from '../svg/units/mobile/electronic.svg';
 import hativa from '../svg/units/mobile/hativa.svg';
 import intelligence from '../svg/units/mobile/intelligence.svg';
 import operations from '../svg/units/mobile/operations.svg';
-const Services = () => {
+const UnitsFieldsServices_Mobile = () => {
   const units = [matzov, electronic, hativa, intelligence, operations];
 
   return (
@@ -146,4 +146,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default UnitsFieldsServices_Mobile;

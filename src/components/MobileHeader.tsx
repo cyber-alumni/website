@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
-import logo from '../image/logo.png';
-import Image from 'next/image';
 import Link from 'next/link';
 import { RxCross2 } from 'react-icons/rx';
 

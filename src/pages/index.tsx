@@ -3,16 +3,16 @@ import Head from 'next/head';
 import { Inter } from 'next/font/google';
 
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import Intro from '@/components/Intro';
 import Footer from '@/components/Footer';
 import ConnectUs from '@/components/ConnectUs';
 import Team from '@/components/Team';
 import Events from '@/components/Events';
-import Community from '@/components/Community';
+import UnitsFieldsServices from '@/components/UnitsFieldsServices';
 
-import Services from '@/components/Services';
+import UnitsFieldsServices_Mobile from '@/components/UnitsFieldsServices_Mobile';
 import MobileMenu from '@/components/MobileHeader';
-import TeamMobile from '@/components/TeamMobile';
+import Team_Mobile from '@/components/Team_Mobile';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,13 +31,13 @@ export default function Home() {
       <main>
         <Header />
         <MobileMenu />
-        <Hero />
+        <Intro />
 
-        <Community />
-        <Services />
+        <UnitsFieldsServices />
+        <UnitsFieldsServices_Mobile />
         <Events />
         <Team />
-        <TeamMobile />
+        <Team_Mobile />
         <ConnectUs />
         <Footer />
       </main>
