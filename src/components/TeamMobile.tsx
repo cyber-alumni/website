@@ -43,7 +43,7 @@ const TeamMobile = () => {
       {/* Mobile Responsive */}
       <div className="lg:hidden relative z-20">
         <div>
-          {/*<div className="text-center text-2xl font-openSens">הנהלת העמותה</div>*/}
+          {/*<div className="text-center text-2xl font-openSans">הנהלת העמותה</div>*/}
           <div className="pt-16 flex flex-col justify-center items-center gap-y-5">
             {teamMembersData.map((data, key) => (
               <div key={key}>

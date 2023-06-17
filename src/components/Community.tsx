@@ -9,10 +9,10 @@ import hativa from '../svg/units/hativa.svg';
 import electronic from '../svg/units/electronic.svg';
 import matzov from '../svg/units/matzov.svg';
 
-import CommunityDataimg1 from '../svg/services/1.svg';
-import CommunityDataimg2 from '../svg/services/2.svg';
-import CommunityDataimg3 from '../svg/services/3.svg';
-import CommunityDataimg4 from '../svg/services/4.svg';
+import CommunityDataimg1 from '../svg/services/hands_light.svg';
+import CommunityDataimg2 from '../svg/services/desk_folders.svg';
+import CommunityDataimg3 from '../svg/services/rich_man.svg';
+import CommunityDataimg4 from '../svg/services/teacher_class.svg';
 import CommunityDataimg5 from '../svg/services/5.svg';
 
 interface CardProps {

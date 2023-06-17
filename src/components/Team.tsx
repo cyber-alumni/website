@@ -12,7 +12,7 @@ const Team = () => {
 
           <div className=" relative z-40  px-3 2xl:px-36">
             <div>
-              <h2 className=" text-center text-2xl font-extrabold font-openSens">
+              <h2 className=" text-center text-2xl font-extrabold font-openSans">
                 הנהלת <br />
                 העמותה
               </h2>
@@ -25,7 +25,7 @@ const Team = () => {
                     src={data.image}
                     alt={data.name}
                   />
-                  <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSens">
+                  <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSans">
                     <span>{data.name}</span>
                     <span className=" block">{data.bio}</span>
                   </h2>
@@ -37,7 +37,7 @@ const Team = () => {
           {/* Board of Directors */}
           <div className=" z-30 relative px-3 2xl:px-36">
             <div>
-              <h2 className=" text-center text-2xl font-extrabold font-openSens">
+              <h2 className=" text-center text-2xl font-extrabold font-openSans">
                 ועד <br />
                 מנהל
               </h2>
@@ -50,7 +50,7 @@ const Team = () => {
                     src={data.image}
                     alt={data.name}
                   />
-                  <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSens">
+                  <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSans">
                     <span>{data.name}</span>
                     <span className=" block">{data.bio}</span>
                   </h2>
@@ -61,7 +61,7 @@ const Team = () => {
           {/* Matzov */}
           <div className=" z-30 relative px-3 2xl:px-36">
             <div>
-              <h2 className=" text-center text-2xl font-extrabold font-openSens">
+              <h2 className=" text-center text-2xl font-extrabold font-openSans">
                 ארגון בוגרי מצו"ב <br />
               </h2>
             </div>
@@ -73,7 +73,7 @@ const Team = () => {
                     src={data.image}
                     alt={data.name}
                   />
-                  <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSens">
+                  <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSans">
                     <span>{data.name}</span>
                     <span className=" block">{data.bio}</span>
                   </h2>

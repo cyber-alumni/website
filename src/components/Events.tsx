@@ -9,7 +9,7 @@ const Events = () => {
     <>
       <section className="relative px-2 lg:block overflow-hidden py-16 bg-[#d9d9d9]">
         <div className="container relative px-0  z-50 space-y-6">
-          <h2 className="text-right pr-2 text-2xl  font-extrabold font-openSens">
+          <h2 className="text-right pr-2 text-2xl  font-extrabold font-openSans">
             לוח אירועים
           </h2>
           {EventsData.map((data, i) => (
@@ -24,13 +24,13 @@ const Events = () => {
               </div>
               <div className="flex  w-full pb-5 md:pb-0 lg:max-w-[80%]  flex-col md:flex-row gap-3 items-center">
                 <div className=" w-full text-right px-5 lg:px-0 order-last md:order-first ">
-                  <h2 className=" text-xl md:text-2xl  font-extrabold font-openSens">
+                  <h2 className=" text-xl md:text-2xl  font-extrabold font-openSans">
                     {data.name}
                   </h2>
-                  <h4 className="text-base py-2 font-normal text-black font-openSens">
+                  <h4 className="text-base py-2 font-normal text-black font-openSans">
                     {data.date}
                   </h4>
-                  <p className=" text-base md:text-xl text-right font-openSens font-medium">
+                  <p className=" text-base md:text-xl text-right font-openSans font-medium">
                     {data.des}
                   </p>
                 </div>

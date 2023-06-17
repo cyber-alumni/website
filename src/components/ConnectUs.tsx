@@ -9,10 +9,10 @@ const ConnectUs = () => {
           </a>
       </div>
       <div className="">
-        <h2 className=" text-xl rtl lg:text-5xl text-right font-openSens font-bold">
+        <h2 className=" text-xl rtl lg:text-5xl text-right font-openSans font-bold">
           עדיין לא הצטרפתם לקבוצת הפייסבוק?
         </h2>
-        <h3 className=" lg:text-right rtl float-right text-center text-lg lg:text-4xl flex lg:pt-2 justify-center lg:justify-end font-openSens font-normal lg:font-bold">
+        <h3 className=" lg:text-right rtl float-right text-center text-lg lg:text-4xl flex lg:pt-2 justify-center lg:justify-end font-openSans font-normal lg:font-bold">
           למה אתם מחכים? מאות בוגרים כבר שם.
         </h3>
       </div>

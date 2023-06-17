@@ -32,30 +32,30 @@ const Footer = () => {
               <LogoWhite />
             </Link>
           </li>
-          <li className="text-base font-openSens font-bold">
+          <li className="text-base font-openSans font-bold">
             כל הזכויות שמורות 2023 ©
           </li>
         </ul>
         <ul className="block text-right space-y-2">
           {socialLinks.map((data, key) => (
-            <li key={key} className="text-base font-openSens font-bold">
+            <li key={key} className="text-base font-openSans font-bold">
               <Link href={data.href}>{data.label}</Link>
             </li>
           ))}
         </ul>
         <ul className="block text-right space-y-2">
-          <li className="text-base font-openSens font-bold">
+          <li className="text-base font-openSans font-bold">
             <Link href={'/'}>אירועים</Link>
           </li>
-          <li className="text-base font-openSens font-bold">
+          <li className="text-base font-openSans font-bold">
             <Link href={'/'}>מדיניות פרטיות</Link>
           </li>
         </ul>
         <ul className="block text-right space-y-3">
-          <li className="text-base font-openSens font-bold">
+          <li className="text-base font-openSans font-bold">
             <Link href={'/'}>למה להצטרף</Link>
           </li>
-          <li className="text-base font-openSens font-bold">
+          <li className="text-base font-openSans font-bold">
             <Link href={'/'}>השותפים שלנו</Link>
           </li>
           <li>
@@ -92,19 +92,19 @@ const Footer = () => {
         <div className="flex relative z-50 items-center pt-5 justify-between">
           <div>
             <ul className=" text-right space-y-2">
-              <li className=" text-sm text-white font-openSens font-bold">
+              <li className=" text-sm text-white font-openSans font-bold">
                 אירועים
               </li>
-              <li className=" text-sm text-white font-openSens font-bold">
+              <li className=" text-sm text-white font-openSans font-bold">
                 מדיניות פרטיות{' '}
               </li>
-              <li className=" text-sm text-white font-openSens font-bold">
+              <li className=" text-sm text-white font-openSans font-bold">
                 למה להצטרף
               </li>
-              <li className=" text-sm text-white font-openSens font-bold">
+              <li className=" text-sm text-white font-openSans font-bold">
                 השותפים שלנו
               </li>
-              <li className=" text-sm text-white font-openSens font-bold">
+              <li className=" text-sm text-white font-openSans font-bold">
                 כל הזכויות שמורות 2023{' '}
               </li>
             </ul>
@@ -114,7 +114,7 @@ const Footer = () => {
               {socialLinks.map((data, key) => (
                 <li
                   key={key}
-                  className="text-sm text-white text-right font-openSens font-bold"
+                  className="text-sm text-white text-right font-openSans font-bold"
                 >
                   <Link href={data.href}>{data.label}</Link>
                 </li>

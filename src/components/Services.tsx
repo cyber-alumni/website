@@ -65,11 +65,11 @@ const Services = () => {
         <div className=" absolute bottom-0">
           <div className=" grid grid-rows-3">
             <div className=" bg-primary relative text-white px-4 py-5">
-              <h2 className=" text-2xl font-bold font-openSens text-right">
+              <h2 className=" text-2xl font-bold font-openSans text-right">
                 עבור הבוגרים
               </h2>
-              <p className="text-sm pt-2 text-right font-openSens font-normal">
-                הפעילויות אשר אנחנו העמותה יוזמת עבור הבוגרים שלה כוללים בראש
+              <p className="text-sm pt-2 text-right font-openSans font-normal">
+                הפעילויות אשר העמותה יוזמת עבור הבוגרים שלה כוללים בראש
                 ובראשונה ייעוץ והכוונה למשתחררים אשר מתלבטים באיזה אפיק לבחור,
                 בדגש על עולם היזמות, בגלל מורכבותו. בנוסף שימור הקשר -
                 הנטוורקינג וההדדיות, הינם אבני יסוד בפעילויות העמותה השוטפות
@@ -91,10 +91,10 @@ const Services = () => {
               </div>
             </div>
             <div className=" bg_gradient relative text-white px-4 py-5">
-              <h2 className=" text-2xl font-bold font-openSens text-right">
+              <h2 className=" text-2xl font-bold font-openSans text-right">
                 עבור הקהילה
               </h2>
-              <p className="text-sm pt-2 text-right font-openSens font-normal">
+              <p className="text-sm pt-2 text-right font-openSans font-normal">
                 העמותה מתכללת מגוון פעילויות אשר הבוגרים תורמים מהידע ומהערכים
                 שלהם חזרה לחברה הישראלית. זה מתחיל בבתי הספר ובתנועות הנוער,
                 ממשיך בהסברה לתקשורת, ונגמר במתן עזרה ותמיכה באירועי סייבר בזמן
@@ -102,7 +102,7 @@ const Services = () => {
               </p>
             </div>
             <div className=" bg_gradient2 overflow-hidden relative text-white px-4 py-5">
-              <h2 className=" text-2xl font-bold font-openSens text-right">
+              <h2 className=" text-2xl font-bold font-openSans text-right">
                 עבור המערך
               </h2>
               <p className="text-sm pt-2 text-right font-openSans font-normal">

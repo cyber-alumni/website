@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: "'Inter', sans-serif",
-        openSens: "'Open Sans', sans-serif",
+        openSans: "'Open Sans', sans-serif",
       },
       colors: {
         primary: '#001767',

@@ -1,9 +1,3 @@
-type Team = {
-  name: string;
-  job: string;
-  img: string;
-};
-
 type Events = {
   name: string;
   date: string;
@@ -123,41 +117,30 @@ export const EventsData: Events[] = [
   // },
 ];
 
-import CommunityDataimg1 from '../svg/services/1.svg';
-import CommunityDataimg2 from '../svg/services/2.svg';
-import CommunityDataimg3 from '../svg/services/3.svg';
-import CommunityDataimg4 from '../svg/services/4.svg';
-import CommunityDataimg5 from '../svg/services/5.svg';
+import hands_light from '../svg/services/hands_light.svg';
+import desk_folders from '../svg/services/desk_folders.svg';
+import rich_man from '../svg/services/rich_man.svg';
+import teacher_class from '../svg/services/teacher_class.svg';
 
 export const communityData: any[] = [
   {
-    image: CommunityDataimg1,
-    name: 'פרויקטים לקהילה',
+    image: hands_light,
+    name: 'התנדבות מקצועית בקהילה',
   },
   {
-    image: CommunityDataimg2,
-    name: 'נטוורקינג',
+    image: hands_light,
+    name: 'כנסי נטוורקינג',
   },
   {
-    image: CommunityDataimg3,
-    name: 'חיבור למשקיעים',
+    image: rich_man,
+    name: 'פורום יזמות',
   },
   {
-    image: CommunityDataimg4,
-    name: 'הכשרה וקורסים',
+    image: desk_folders,
+    name: 'הטבות לבוגרים',
   },
   {
-    image: CommunityDataimg4,
-    name: 'שירותי ייעוץ בחינם',
+    image: teacher_class,
+    name: 'שימור הקשר עם היחידות',
   },
 ];
-
-import temMangement1 from '../svg/team/management/manger1.svg';
-import temMangement2 from '../svg/team/management/manger2.svg';
-import temMangement3 from '../svg/team/management/manger3.svg';
-
-import boardOfDerector1 from '@/svg/team/matzov/1.svg';
-import boardOfDerector2 from '@/svg/team/matzov/2.svg';
-import boardOfDerector3 from '@/svg/team/matzov/3.svg';
-import boardOfDerector4 from '@/svg/team/matzov/4.svg';
-import boardOfDerector5 from '@/svg/team/matzov/5.svg';
