@@ -51,7 +51,6 @@ const UnitsFieldsServices_Mobile = () => {
                 <Image
                   src={data.image}
                   className=" w-full h-full   rounded-xl object-cover"
-                  alt="CommunityDataimg1"
                 />
                 <div className=" absolute h-[120px]  w-full top-0 bg-gradient rounded-xl "></div>
                 <h2 className=" text-sm text-white font-extrabold absolute  top-[70%]  text-center w-full">

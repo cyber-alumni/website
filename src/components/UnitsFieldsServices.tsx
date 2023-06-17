@@ -13,22 +13,28 @@ import {communityData} from "@/data";
 
 interface CardProps {
     name: string;
+
     png: any;
 }
 
-const Card: React.FC<CardProps> = ({ name, png }) => (
-  <div className="w-full min-w-[270px] shadow-sm overflow-hidden px-4 py-2 bg-white rounded-3xl flex flex-col sm:flex-row items-center gap-2">
-    <h2 className="text-base w-full sm:w-[90%] text-center font-openSans font-bold">
-      {name}
-    </h2>
-    <Image src={png} alt={name} className="block" />
-  </div>
+const Card: React.FC<CardProps> = ({name, png}) => (
+    <div
+        className="w-full min-w-[270px] shadow-sm overflow-hidden px-4 py-2 bg-white rounded-3xl flex flex-col sm:flex-row items-center gap-2">
+        <h2 className="text-base w-full sm:w-[90%] text-center font-openSans font-bold">
+            {name}
+        </h2>
+        <Image src={png} alt={name} className="block"/>
+    </div>
 );
 
 
 const UnitsFieldsServices = () => {
     return (
-        <section id="units" className="relative hidden lg:flex  flex-col gap-10 overflow-hidden">
+        <>
+        <section
+            id="units"
+            className="relative hidden lg:flex  flex-col gap-10 overflow-hidden  "
+        >
             <div className="absolute  lg:top-[6%] 2xl:top-[10%] w-full">
                 <div className=" flex gap-y-6  items-center flex-col  container ">
                     <div className="flex items-center gap-6">
@@ -42,26 +48,27 @@ const UnitsFieldsServices = () => {
                     </div>
                 </div>
             </div>
+            {/* */}
             <div className="relative">
                 <div className="container font-openSans gap-6 mt-auto lg:mt-[28%] xl:mt-[25%] 2xl:mt-[20%]   grid grid-cols-5">
-                      {communityData.map((data, key) => (
-                            <div
-                                style={{
-                                    backgroundImage: `url("{data.image}")`,
-                                }}
-                                className=" relative  z-50 bg-gradient rounded-xl h-[292px]"
-                            >
-                                <Image
-                                    src={{data.image}}
-                                    className=" w-full h-full  rounded-xl object-cover"
-                                    alt="CommunityDataimg1"
-                                />
-                                <div className=" absolute w-full top-0 bg-gradient rounded-xl h-[292px]"></div>
-                                <h2 className=" text-3xl text-white font-extrabold absolute top-[80%] text-center w-full">
-                                    {data.name}
-                                </h2>
-                            </div>
-                      ))}
+                    {communityData.map((data, key) => (
+                        <>
+                        <div
+                            key={key}
+                            className=" relative  z-50 bg-gradient rounded-xl h-[292px]"
+                        >
+                            <Image
+                                src={data.image}
+                                className=" w-full h-full  rounded-xl object-cover"
+                                alt="CommunityDataimg1"
+                            />
+                            <div className=" absolute w-full top-0 bg-gradient rounded-xl h-[292px]"></div>
+                            <h2 className=" text-3xl text-white font-extrabold absolute top-[80%] text-center w-full">
+                                {data.name}
+                            </h2>
+                        </div>
+                        </>
+                    ))}
 
                     <div className="absolute z-10">
                         <Image src={bg} alt="bg"/>
@@ -104,6 +111,7 @@ const UnitsFieldsServices = () => {
                 </div>
             </div>
         </section>
+            </>
     );
 };
 

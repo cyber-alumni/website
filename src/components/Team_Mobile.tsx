@@ -22,7 +22,7 @@ const Team_Mobile = () => {
   return (
     <div className="bg-primary relative overflow-hidden pt-10 pb-16 text-white">
               <div className="flex justify-center pt-10">
-          <div>
+          <div className="lg:hidden">
             <select
               className="rtl focus:outline-none border-2 rounded-md px-3 py-2 text-base border-white bg-transparent"
               value={selectedValue}
