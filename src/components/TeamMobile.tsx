@@ -1,30 +1,49 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import { teamData, teamMembers, teamMobileData } from '@/data';
+import { teamData } from '@/data';
 
 const TeamMobile = () => {
-  const [selectedValue, setSelectedValue] = useState<string>('management');
+  const [selectedValue, setSelectedValue] = useState<string>('leaders');
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedValue(event.target.value);
   };
 
   let teamMembersData: any[] = [];
-  if (selectedValue === 'management') {
-    teamMembersData = teamMobileData.management;
-  } else if (selectedValue === 'directors') {
-    teamMembersData = teamMobileData.directors;
-  } else if (selectedValue === 'officials') {
-    teamMembersData = teamMobileData.officials;
+  if (selectedValue === 'leaders') {
+    teamMembersData = teamData.leaders;
+  } else if (selectedValue === 'management') {
+    teamMembersData = teamData.management;
+  } else if (selectedValue === 'matzov') {
+    teamMembersData = teamData.matzov;
   }
 
   return (
     <div className="bg-primary relative overflow-hidden pt-10 pb-16 text-white">
+              <div className="flex justify-center pt-10">
+          <div>
+            <select
+              className="rtl focus:outline-none border-2 rounded-md px-3 py-2 text-base border-white bg-transparent"
+              value={selectedValue}
+              onChange={handleSelectChange}
+            >
+              <option className="text-black bg-none" value="leaders">
+                הנהלת העמותה
+              </option>
+              <option className="text-black bg-none" value="matzov">
+                ארגון בוגרי מצו"ב
+              </option>
+              <option className="text-black bg-none" value="management">
+                ועד מנהל
+              </option>
+            </select>
+          </div>
+        </div>
       {/* Mobile Responsive */}
       <div className="lg:hidden relative z-20">
         <div>
-          <div className="text-center text-2xl font-openSens">הנהלת העמותה</div>
+          {/*<div className="text-center text-2xl font-openSens">הנהלת העמותה</div>*/}
           <div className="pt-16 flex flex-col justify-center items-center gap-y-5">
             {teamMembersData.map((data, key) => (
               <div key={key}>
@@ -46,25 +65,7 @@ const TeamMobile = () => {
           </div>
         </div>
 
-        <div className="flex justify-center pt-10">
-          <div>
-            <select
-              className="focus:outline-none border-2 rounded-md px-3 py-2 text-base border-white bg-transparent"
-              value={selectedValue}
-              onChange={handleSelectChange}
-            >
-              <option className="text-black bg-none" value="management">
-                הנהלת העמותה
-              </option>
-              <option className="text-black bg-none" value="directors">
-                ועד מנהל
-              </option>
-              <option className="text-black bg-none" value="officials">
-                בעלי תפקידים
-              </option>
-            </select>
-          </div>
-        </div>
+
       </div>
 
       <div className="absolute left-0 top-0 z-10 lg:hidden">

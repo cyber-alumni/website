@@ -5,12 +5,12 @@ import { LogoWhite } from './Logo';
 const Footer = () => {
   const socialLinks = [
     {
-      label: 'YouTube',
-      href: '',
+      label: 'Facebook',
+      href: 'https://www.facebook.com/cyberAlumniIsrael/',
     },
     {
       label: 'Meetup',
-      href: '',
+      href: 'https://www.meetup.com/cyber-almuni/',
     },
     {
       label: 'LinkedIn',
@@ -18,8 +18,8 @@ const Footer = () => {
     },
 
     {
-      label: 'info@icda.co.il',
-      href: '',
+      label: 'admin@cyber-alumni.org',
+      href: 'mailto:admin@cyber-alumni.org',
     },
   ];
 
@@ -33,25 +33,15 @@ const Footer = () => {
             </Link>
           </li>
           <li className="text-base font-openSens font-bold">
-            כל הזכויות שמורות 2023
+            כל הזכויות שמורות 2023 ©
           </li>
         </ul>
         <ul className="block text-right space-y-2">
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>YouTube</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>Meetup</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>LinkedIn</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>Facebook</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>info@icda.co.il</Link>
-          </li>
+          {socialLinks.map((data, key) => (
+            <li key={key} className="text-base font-openSens font-bold">
+              <Link href={data.href}>{data.label}</Link>
+            </li>
+          ))}
         </ul>
         <ul className="block text-right space-y-2">
           <li className="text-base font-openSens font-bold">

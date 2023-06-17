@@ -7,7 +7,7 @@ import e2 from '../img/e2.png';
 const Events = () => {
   return (
     <>
-      <section className="relative px-2 lg:block overflow-hidden py-16 bg-[#d9d9d9] ">
+      <section className="relative px-2 lg:block overflow-hidden py-16 bg-[#d9d9d9]">
         <div className="container relative px-0  z-50 space-y-6">
           <h2 className="text-right pr-2 text-2xl  font-extrabold font-openSens">
             לוח אירועים
@@ -42,9 +42,10 @@ const Events = () => {
               </div>
             </div>
           ))}
-          <h2 className=" text-base lg:pl-10 font-bold underline">
+          <a href={"https://www.meetup.com/cyber-almuni/"}><h2 className=" text-base lg:pl-10 font-bold underline">
             לעוד אירועים
           </h2>
+          </a>
         </div>
         <div className="absolute z-10 top-0 left-0">
           <Image

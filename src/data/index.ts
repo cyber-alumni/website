@@ -16,118 +16,91 @@ type TeamMeb = {
   image: string;
 };
 
-export const teamMembers: Team[] = [
-  {
-    name: 'עמיתי בן-שושן',
-    job: 'ועד מנהל',
-    img: '/image/team/2.png',
-  },
-  {
-    name: 'אור שוורץ',
-    job: 'ועד מנהל',
-    img: '/image/team/1.png',
-  },
-  {
-    name: 'אור שוורץ',
-    job: 'ועד מנהל',
-    img: '/image/team/3.png',
-  },
-  {
-    name: 'אור שוורץ',
-    job: 'ועד מנהל',
-    img: '/image/team/4.png',
-  },
-  {
-    name: 'אור שוורץ',
-    job: 'ועד מנהל',
-    img: '/image/team/5.png',
-  },
-];
 
-import teamMeb1 from '../svg/team/1.svg';
-import teamMeb2 from '../svg/team/2.svg';
-import teamMeb3 from '../svg/team/3.svg';
-import teamMeb4 from '../svg/team/directors/1.svg';
-import teamMeb5 from '../svg/team/directors/2.svg';
-import teamMeb6 from '../svg/team/directors/3.svg';
-import teamMeb7 from '../svg/team/directors/4.svg';
-import teamMeb8 from '../svg/team/directors/5.svg';
+import matan from '../svg/team/leaders/matan.svg';
+import assaf from '../svg/team/leaders/assaf.svg';
+import danny from '../svg/team/leaders/danny.svg';
+import amitai from '@/svg/team/management/amitai.svg';
+import amir from '@/svg/team/management/amir.svg';
+import idan from '@/svg/team/management/idan.svg';
+import hila from '@/svg/team/management/hila.svg';
+import or from '@/svg/team/management/or.svg';
 
-export const teamMobileData: {
+export const teamData: {
+  leaders: TeamMeb[];
   management: TeamMeb[];
-  officials: TeamMeb[];
-  directors: TeamMeb[];
+  matzov: TeamMeb[];
 } = {
-  management: [
+  leaders: [
     {
       name: 'מתן דוברושין',
       bio: 'מנכ”ל העמותה',
-      image: teamMeb1,
+      image: matan,
     },
     {
       name: 'אסף נקש',
       bio: 'יו”ר העמותה',
-      image: teamMeb2,
+      image: assaf,
     },
     {
       name: 'דני ברן',
       bio: 'נשיא העמותה',
-      image: teamMeb3,
+      image: danny,
     },
   ],
-  officials: [
+  management: [
     {
-      name: 'אור אפשטיין',
-      bio: 'רכז התנדבויות',
-      image: teamMeb4,
+      name: 'אמיתי בן שושן',
+      bio: '',
+      image: amitai,
     },
     {
-      name: 'שי שוורץ',
-      bio: 'מדיה ודיגיטל',
-      image: teamMeb5,
+      name: 'אמיר קריידן',
+      bio: '',
+      image: amir,
     },
     {
-      name: 'מתן אבוטבול',
-      bio: 'רכז התנדבויות',
-      image: teamMeb6,
+      name: 'עידן פטלסקי',
+      bio: '',
+      image: idan,
     },
     {
-      name: 'יובל חשביה',
-      bio: 'הסברה וחינוך',
-      image: teamMeb7,
+      name: 'הילה אוחנה ברומר',
+      bio: '',
+      image: hila,
     },
     {
-      name: 'יוסף הרוש',
-      bio: 'מדיה וקוד פתוח',
-      image: teamMeb8,
+      name: 'אור שוורץ',
+      bio: '',
+      image: or,
     },
   ],
-  directors: [
-    {
-      name: 'אור אפשטיין',
-      bio: 'רכז התנדבויות',
-      image: teamMeb4,
-    },
-    {
-      name: 'שי שוורץ',
-      bio: 'מדיה ודיגיטל',
-      image: teamMeb5,
-    },
-    {
-      name: 'מתן אבוטבול',
-      bio: 'רכז התנדבויות',
-      image: teamMeb6,
-    },
-    {
-      name: 'יובל חשביה',
-      bio: 'הסברה וחינוך',
-      image: teamMeb7,
-    },
-    {
-      name: 'יוסף הרוש',
-      bio: 'מדיה וקוד פתוח',
-      image: teamMeb8,
-    },
+  matzov: [
+    // {
+    //   name: 'אור אפשטיין',
+    //   bio: 'רכז התנדבויות',
+    //   image: teamMeb4,
+    // },
+    // {
+    //   name: 'שי שוורץ',
+    //   bio: 'מדיה ודיגיטל',
+    //   image: teamMeb5,
+    // },
+    // {
+    //   name: 'מתן אבוטבול',
+    //   bio: 'רכז התנדבויות',
+    //   image: teamMeb6,
+    // },
+    // {
+    //   name: 'יובל חשביה',
+    //   bio: 'הסברה וחינוך',
+    //   image: teamMeb7,
+    // },
+    // {
+    //   name: 'יוסף הרוש',
+    //   bio: 'מדיה וקוד פתוח',
+    //   image: teamMeb8,
+    // },
   ],
 };
 
@@ -135,18 +108,19 @@ import img1 from '../svg/event/event1.svg';
 import img2 from '../svg/event/event2.svg';
 
 export const EventsData: Events[] = [
-  {
-    name: 'כנס בוגרי מצו”ב 2023',
-    date: '26 פברואר, 2023',
-    des: 'האירוע השנתי של בוגרי יחידת מצו”ב לשנת 2023. על הפרק הרצאות מבוגרי היחידההאירוע בחסות GotFriends ובנק לאומי',
-    img: img1,
-  },
-  {
-    name: 'נותנים במה',
-    date: '26 פברואר, 2023',
-    des: 'העמותה מארגנת מיט-אפים מקצועיים שמטרתם לתת במה לחבריה להציג מחקרים ועבודות שביצעו, תוך כדי העשרת שאר חברי העמותה והקהל הרחב',
-    img: img2,
-  },
+  // {
+  //   name: 'כנס בוגרי מצו”ב 2023',
+  //   date: '26 פברואר, 2023',
+  //   des: 'האירוע השנתי של בוגרי יחידת מצו”ב לשנת 2023. על הפרק הרצאות מבוגרי היחידההאירוע בחסות GotFriends ובנק לאומי',
+  //   img: img1,
+  // }
+
+  // , {
+  //   name: 'נותנים במה',
+  //   date: '26 פברואר, 2023',
+  //   des: 'העמותה מארגנת מיט-אפים מקצועיים שמטרתם לתת במה לחבריה להציג מחקרים ועבודות שביצעו, תוך כדי העשרת שאר חברי העמותה והקהל הרחב',
+  //   img: img2,
+  // },
 ];
 
 import CommunityDataimg1 from '../svg/services/1.svg';
@@ -182,55 +156,8 @@ import temMangement1 from '../svg/team/management/manger1.svg';
 import temMangement2 from '../svg/team/management/manger2.svg';
 import temMangement3 from '../svg/team/management/manger3.svg';
 
-import boardOfDerector1 from '../svg/team/directors/1.svg';
-import boardOfDerector2 from '../svg/team/directors/2.svg';
-import boardOfDerector3 from '../svg/team/directors/3.svg';
-import boardOfDerector4 from '../svg/team/directors/4.svg';
-import boardOfDerector5 from '../svg/team/directors/5.svg';
-
-export const teamData = {
-  manement: [
-    {
-      name: 'דני ברן',
-      role: 'נשיא העמותה',
-      profileImage: temMangement1,
-    },
-    {
-      name: 'אסף נקש',
-      role: 'יו”ר העמותה',
-      profileImage: temMangement2,
-    },
-    {
-      name: 'מתן דוברושין',
-      role: 'מנכ”ל העמותה',
-      profileImage: temMangement3,
-    },
-  ],
-  directors: [
-    {
-      name: 'עמיתי בן-שושן',
-      role: 'עמיתי בן-שושן',
-      profileImage: boardOfDerector1,
-    },
-    {
-      name: 'אור שוורץ',
-      role: 'ועד מנהל',
-      profileImage: boardOfDerector2,
-    },
-    {
-      name: 'הילה ברומר',
-      role: 'ועד מנהל',
-      profileImage: boardOfDerector3,
-    },
-    {
-      name: 'עידן פטלסקי',
-      role: 'ועד מנהל',
-      profileImage: boardOfDerector4,
-    },
-    {
-      name: 'אמיר קריידן',
-      role: 'ועד מנהל',
-      profileImage: boardOfDerector5,
-    },
-  ],
-};
+import boardOfDerector1 from '@/svg/team/matzov/1.svg';
+import boardOfDerector2 from '@/svg/team/matzov/2.svg';
+import boardOfDerector3 from '@/svg/team/matzov/3.svg';
+import boardOfDerector4 from '@/svg/team/matzov/4.svg';
+import boardOfDerector5 from '@/svg/team/matzov/5.svg';

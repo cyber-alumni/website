@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { teamData, teamMembers, teamMobileData } from '@/data';
+import { teamData } from '@/data';
 import img1 from '../img/footer_vector_1.png';
 import img2 from '../img/footer_vector.png';
 const Team = () => {
   return (
-    <section className=" bg-primary relative overflow-hidden  pt-10 pb-16 text-white">
+    <section className="bg-primary relative overflow-hidden pt-10 pb-16 text-white hidden lg:block">
       <div className="relative hidden lg:block">
         <div className="container  space-y-7 justify-center">
           {/* The management of the association */}
@@ -18,16 +18,16 @@ const Team = () => {
               </h2>
             </div>
             <div className="grid place-items-center grid-cols-3">
-              {teamData.manement.map((data, key) => (
+              {teamData.leaders.map((data, key) => (
                 <div key={key} className="py-10">
                   <Image
                     className=" block max-w-[108px]  w-full mx-auto object-cover"
-                    src={data.profileImage}
+                    src={data.image}
                     alt={data.name}
                   />
                   <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSens">
                     <span>{data.name}</span>
-                    <span className=" block">{data.role}</span>
+                    <span className=" block">{data.bio}</span>
                   </h2>
                 </div>
               ))}
@@ -43,40 +43,39 @@ const Team = () => {
               </h2>
             </div>
             <div className="grid place-items-center grid-cols-5">
-              {teamData.directors.map((data, key) => (
+              {teamData.management.map((data, key) => (
                 <div key={key} className="py-10">
                   <Image
                     className=" block  max-w-[79px] w-full mx-auto object-cover"
-                    src={data.profileImage}
+                    src={data.image}
                     alt={data.name}
                   />
                   <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSens">
                     <span>{data.name}</span>
-                    <span className=" block">{data.role}</span>
+                    <span className=" block">{data.bio}</span>
                   </h2>
                 </div>
               ))}
             </div>
           </div>
-          {/* Officials*/}
+          {/* Matzov */}
           <div className=" z-30 relative px-3 2xl:px-36">
             <div>
               <h2 className=" text-center text-2xl font-extrabold font-openSens">
-                בעלי <br />
-                תפקידים
+                ארגון בוגרי מצו"ב <br />
               </h2>
             </div>
             <div className="grid place-items-center grid-cols-5">
-              {teamData.directors.map((data, key) => (
+              {teamData.matzov.map((data, key) => (
                 <div key={key} className="py-10">
                   <Image
                     className=" block  max-w-[79px] w-full mx-auto object-cover"
-                    src={data.profileImage}
+                    src={data.image}
                     alt={data.name}
                   />
                   <h2 className=" py-2 text-center  text-2xl font-extrabold font-openSens">
                     <span>{data.name}</span>
-                    <span className=" block">{data.role}</span>
+                    <span className=" block">{data.bio}</span>
                   </h2>
                 </div>
               ))}

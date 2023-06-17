@@ -37,6 +37,7 @@ const Services = () => {
       </div>
       <div className=" lg:hidden services min-w-[100vw] relative    py-10 ">
         <Swiper
+            dir={"rtl"}
           slidesPerView={3}
           spaceBetween={30}
           freeMode={true}
