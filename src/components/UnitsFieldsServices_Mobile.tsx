@@ -53,7 +53,7 @@ const UnitsFieldsServices_Mobile = () => {
                   className=" w-full h-full   rounded-xl object-cover"
                 />
                 <div className=" absolute h-[120px]  w-full top-0 bg-gradient rounded-xl "></div>
-                <h2 className=" text-sm text-white font-extrabold absolute  top-[70%]  text-center w-full">
+                <h2 className=" text-sm text-white font-extrabold absolute  top-[65%]  text-center w-full">
                   {data.name}
                 </h2>
               </div>
