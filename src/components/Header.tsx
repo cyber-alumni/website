@@ -4,7 +4,7 @@ import { LogoDark } from './Logo';
 
 const Header = () => {
   return (
-    <header className="hidden lg:block container py-6 bg-white">
+    <header className="hidden lg:block container py-6 px-36 bg-white">
       <div className="flex items-center justify-between">
         <div className=" order-last">
           <Link href={'/'}>

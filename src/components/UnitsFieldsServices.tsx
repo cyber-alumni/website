@@ -19,7 +19,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({name, png}) => (
     <div
-        className="w-full min-w-[270px] shadow-sm overflow-hidden px-4 py-2 bg-white rounded-3xl flex flex-col sm:flex-row items-center gap-2">
+        className="w-full drop-shadow-lg min-w-[270px] overflow-hidden px-4 py-2 bg-white rounded-3xl flex flex-col sm:flex-row items-center gap-2">
         <h2 className="text-base w-full sm:w-[90%] text-center font-openSans font-bold">
             {name}
         </h2>
