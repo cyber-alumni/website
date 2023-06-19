@@ -7,7 +7,7 @@ import e2 from '../img/e2.png';
 const Events = () => {
   return (
     <>
-      <section className="relative px-2 lg:block overflow-hidden py-16 bg-[#d9d9d9]">
+      <section className={"relative px-2 overflow-hidden py-16 bg-[#d9d9d9] " + (EventsData.length ? "lg:block" : "hidden")}>
         <div className="container relative px-0  z-50 space-y-6">
           <h2 className="text-right pr-2 text-2xl  font-extrabold font-openSans">
             לוח אירועים

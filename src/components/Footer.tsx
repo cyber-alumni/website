@@ -44,23 +44,23 @@ const Footer = () => {
           ))}
         </ul>
         <ul className="block text-right space-y-2">
-          <li className="text-base font-openSans font-bold">
-            <Link href={'/'}>אירועים</Link>
-          </li>
-          <li className="text-base font-openSans font-bold">
-            <Link href={'/'}>מדיניות פרטיות</Link>
+          <li className="text-base font-openSens font-bold">
+            <Link href={'/'}>תקנון העמותה</Link>
           </li>
         </ul>
         <ul className="block text-right space-y-3">
+          {/*
           <li className="text-base font-openSans font-bold">
             <Link href={'/'}>למה להצטרף</Link>
           </li>
           <li className="text-base font-openSans font-bold">
             <Link href={'/'}>השותפים שלנו</Link>
           </li>
+                    */}
           <li>
             <button className="btn_primary">בוגרים? הצטרפו בחינם</button>
           </li>
+
         </ul>
       </div>
 
@@ -93,17 +93,16 @@ const Footer = () => {
           <div>
             <ul className=" text-right space-y-2">
               <li className=" text-sm text-white font-openSans font-bold">
-                אירועים
+                תקנון העמותה
               </li>
-              <li className=" text-sm text-white font-openSans font-bold">
-                מדיניות פרטיות{' '}
-              </li>
+              {/*
               <li className=" text-sm text-white font-openSans font-bold">
                 למה להצטרף
               </li>
               <li className=" text-sm text-white font-openSans font-bold">
                 השותפים שלנו
               </li>
+              */}
               <li className=" text-sm text-white font-openSans font-bold">
                 כל הזכויות שמורות 2023{' '}
               </li>

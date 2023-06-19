@@ -35,7 +35,7 @@ const UnitsFieldsServices = () => {
             id="units"
             className="relative hidden lg:flex  flex-col gap-10 overflow-hidden  "
         >
-            <div className="absolute  lg:top-[6%] 2xl:top-[10%] w-full">
+            <div className="absolute  lg:top-[6%] 2xl:top-[6%] w-full">
                 <div className=" flex gap-y-6  items-center flex-col  container ">
                     <div className="flex items-center gap-6">
                         <Card name="מרכז מודיעין להגנה" png={agaf}/>
@@ -75,7 +75,7 @@ const UnitsFieldsServices = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex mt-auto pb-2  flex-col lg:flex-row  items-end  text-white  justify-center ">
+            <div className="flex mt-auto flex-col lg:flex-row  items-end  text-white  justify-center"> {/*add pb-1 if needed padding*/}
                 <div
                     className="bg-[#001767] relative px-16 flex flex-col justify-center items-end h-[474px] basis-[35%]">
                     <h2 className="text-4xl  font-openSans font-bold">עבור המערך</h2>
