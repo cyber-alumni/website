@@ -63,7 +63,7 @@ const UnitsFieldsServices = () => {
                                 alt="CommunityDataimg1"
                             />
                             <div className=" absolute w-full top-0 bg-gradient rounded-xl h-[292px]"></div>
-                            <h2 className=" text-3xl text-white font-extrabold absolute top-[80%] text-center w-full">
+                            <h2 className=" text-3xl text-white font-extrabold absolute top-[70%] text-center w-full">
                                 {data.name}
                             </h2>
                         </div>
