@@ -17,7 +17,7 @@ interface CardProps {
     png: any;
 }
 
-const Card: React.FC<CardProps> = ({name, png}) => (
+const UnitCard: React.FC<CardProps> = ({name, png}) => (
     <div
         className="w-full drop-shadow-lg min-w-[270px] overflow-hidden px-4 py-2 bg-white rounded-3xl flex flex-col sm:flex-row items-center gap-2">
         <h2 className="text-base w-full sm:w-[90%] text-center font-openSans font-bold">
@@ -38,13 +38,13 @@ const UnitsFieldsServices = () => {
             <div className="absolute  lg:top-[6%] 2xl:top-[6%] w-full">
                 <div className=" flex gap-y-6  items-center flex-col  container ">
                     <div className="flex items-center gap-6">
-                        <Card name="מרכז מודיעין להגנה" png={agaf}/>
-                        <Card name="חטיבת ההגנה בסייבר" png={hativa}/>
-                        <Card name="מרכז צופן ובטחון (מצו”ב)" png={matzov}/>
+                        <UnitCard name="מרכז מודיעין להגנה" png={agaf}/>
+                        <UnitCard name="חטיבת ההגנה בסייבר" png={hativa}/>
+                        <UnitCard name="מרכז צופן ובטחון (מצו”ב)" png={matzov}/>
                     </div>
                     <div className="flex justify-center items-center gap-6">
-                        <Card name="מרכז מבצעים להגנה" png={agaf}/>
-                        <Card name="מרכז לוחמה אלקטרונית" png={electronic}/>
+                        <UnitCard name="מרכז מבצעים להגנה" png={agaf}/>
+                        <UnitCard name="מרכז לוחמה אלקטרונית" png={electronic}/>
                     </div>
                 </div>
             </div>

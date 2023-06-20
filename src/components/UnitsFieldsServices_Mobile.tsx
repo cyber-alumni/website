@@ -11,28 +11,37 @@ import 'swiper/css/navigation';
 // import required modules
 import { FreeMode, Navigation } from 'swiper';
 
-import matzov from '../svg/units/mobile/matzov.svg';
-import electronic from '../svg/units/mobile/electronic.svg';
-import hativa from '../svg/units/mobile/hativa.svg';
-import intelligence from '../svg/units/mobile/intelligence.svg';
-import operations from '../svg/units/mobile/operations.svg';
+import agaf from '../svg/units/agaf.svg';
+import hativa from '../svg/units/hativa.svg';
+import electronic from '../svg/units/electronic.svg';
+import matzov from '../svg/units/matzov.svg';
+
+const UnitCardMobile: React.FC<CardProps> = ({name, png}) => (
+    <div
+        className="w-1/2 px-2 py-2 sm:flex-row items-center gap-2 contents float-right">
+        <span className="text-right font-openSans font-medium pr-2 w-2/3">
+            {name}
+        </span>
+        <Image src={png} alt={name} className="block pr-2 h-10"/>
+    </div>
+);
 const UnitsFieldsServices_Mobile = () => {
-  const units = [matzov, electronic, hativa, intelligence, operations];
+  // const units = [matzov, electronic, hativa, intelligence, operations];
 
   return (
     <>
-      <div className="px-4 pt-6 lg:hidden space-y-4">
+      <div className="pt-6 lg:hidden space-y-4">
         <div className="flex items-center justify-between">
-          <Image src={matzov} width={160} alt="Tarif" />
-          <Image src={hativa} width={160} alt="Tarif" />
+            <UnitCardMobile name="מרכז מודיעין להגנה" png={agaf}/>
+            <UnitCardMobile name="חטיבת ההגנה בסייבר" png={hativa}/>
         </div>
         <div className="flex items-center justify-between">
-          <Image src={operations} width={160} alt="Tarif" />
-          <Image src={intelligence} width={160} alt="Tarif" />
+          <UnitCardMobile name="מרכז צופן ובטחון (מצו”ב)" png={matzov}/>
+          <UnitCardMobile name="מרכז מבצעים להגנה" png={agaf}/>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between float-right">
           <p></p>
-          <Image src={electronic} width={160} alt="Tarif" />
+          <UnitCardMobile name="מרכז לוחמה אלקטרונית" png={electronic}/>
         </div>
       </div>
       <div className=" lg:hidden services min-w-[100vw] relative    py-10 ">
