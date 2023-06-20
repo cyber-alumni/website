@@ -19,6 +19,16 @@ import amir from '@/svg/team/management/amir.svg';
 import idan from '@/svg/team/management/idan.svg';
 import hila from '@/svg/team/management/hila.svg';
 import or from '@/svg/team/management/or.svg';
+// TODO: convert to svg
+//matzov
+import ron from '@/svg/team/matzov/ron.jpeg'
+import yair from '@/svg/team/matzov/yair.jpg'
+import nir from '@/svg/team/matzov/nir.jpeg'
+//officials
+import abutbul from '@/svg/team/officials/abutbul.jpeg'
+import jossef from '@/svg/team/officials/jossef.jpeg'
+import yuval from '@/svg/team/officials/yuval.jpeg'
+import shay from '@/svg/team/officials/shay.jpeg'
 
 export const teamData: {
   leaders: TeamMeb[];
@@ -70,31 +80,43 @@ export const teamData: {
     },
   ],
   matzov: [
-    // {
-    //   name: 'אור אפשטיין',
-    //   bio: 'רכז התנדבויות',
-    //   image: teamMeb4,
-    // },
-    // {
-    //   name: 'שי שוורץ',
-    //   bio: 'מדיה ודיגיטל',
-    //   image: teamMeb5,
-    // },
-    // {
-    //   name: 'מתן אבוטבול',
-    //   bio: 'רכז התנדבויות',
-    //   image: teamMeb6,
-    // },
-    // {
-    //   name: 'יובל חשביה',
-    //   bio: 'הסברה וחינוך',
-    //   image: teamMeb7,
-    // },
-    // {
-    //   name: 'יוסף הרוש',
-    //   bio: 'מדיה וקוד פתוח',
-    //   image: teamMeb8,
-    // },
+    {
+      name: 'ניר עומר',
+      bio: '',
+      image: nir,
+    },
+    {
+      name: 'רון ארבל',
+      bio: '',
+      image: ron,
+    },
+    {
+      name: 'יאיר לדיז׳נסקי',
+      bio: '',
+      image: yair,
+    },
+  ],
+  officials: [
+    {
+      name: 'שי שוורץ',
+      bio: '',
+      image: shay,
+    },
+    {
+      name: 'מתן אבוטבול',
+      bio: '',
+      image: abutbul,
+    },
+    {
+      name: 'יובל חשביה',
+      bio: '',
+      image: yuval,
+    },
+    {
+      name: 'יוסף הרוש',
+      bio: '',
+      image: jossef,
+    },
   ],
 };
 

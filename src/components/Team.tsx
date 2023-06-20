@@ -69,7 +69,7 @@ const Team = () => {
               {teamData.matzov.map((data, key) => (
                 <div key={key} className="py-10">
                   <Image
-                    className=" block  max-w-[79px] w-full mx-auto object-cover"
+                    className=" block rounded-full max-w-[79px] w-full mx-auto object-cover"
                     src={data.image}
                     alt={data.name}
                   />
