@@ -7,7 +7,7 @@ import img2 from '../img/footer_vector.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
-const TeamMember = ({ image, name, bio }) => (
+const TeamMember : React.FC<any> = ({ image, name, bio }) => (
   <div className="py-10">
     <Image
       className="block max-w-[100px] w-full mx-auto object-cover rounded-full"
@@ -21,7 +21,7 @@ const TeamMember = ({ image, name, bio }) => (
   </div>
 );
 
-const TeamSection = ({ title, members }) => {
+const TeamSection : React.FC<any> = ({ title, members }) => {
   const numMembers = members.length;
   const gridColumns = `grid-cols-${Math.min(numMembers, 5)}`;
 
@@ -31,7 +31,7 @@ const TeamSection = ({ title, members }) => {
         <h2 className="text-center text-2xl font-extrabold font-openSans">{title}</h2>
       </div>
       <div className={`grid place-items-center ${gridColumns} center`}>
-        {members.map((member, index) => (
+        {members.map((member: any, index: any) => (
           <TeamMember key={index} {...member} />
         ))}
       </div>

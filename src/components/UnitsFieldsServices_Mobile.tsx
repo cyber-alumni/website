@@ -16,7 +16,7 @@ import hativa from '../svg/units/hativa.svg';
 import electronic from '../svg/units/electronic.svg';
 import matzov from '../svg/units/matzov.svg';
 
-const UnitCardMobile: React.FC<CardProps> = ({name, png}) => (
+const UnitCardMobile: React.FC<any> = ({name, png}) => (
     <div
         className="w-1/2 px-2 py-2 sm:flex-row items-center gap-2 contents float-right">
         <span className="text-right font-openSans font-medium pr-2 w-2/3">
@@ -60,7 +60,7 @@ const UnitsFieldsServices_Mobile = () => {
                 <Image
                   src={data.image}
                   className=" w-full h-full   rounded-xl object-cover"
-                />
+                 alt={""}/>
                 <div className=" absolute h-[120px]  w-full top-0 bg-gradient rounded-xl "></div>
                 <h2 className=" text-sm text-white font-extrabold absolute  top-[65%]  text-center w-full">
                   {data.name}

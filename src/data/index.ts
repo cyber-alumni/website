@@ -7,7 +7,7 @@ type Events = {
 type TeamMeb = {
   name: string;
   bio: string;
-  image: string;
+  image: any;
 };
 
 
