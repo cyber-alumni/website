@@ -17,10 +17,12 @@ const Team_Mobile = () => {
     teamMembersData = teamData.management;
   } else if (selectedValue === 'matzov') {
     teamMembersData = teamData.matzov;
+  }else if (selectedValue === 'officials') {
+    teamMembersData = teamData.officials;
   }
 
   return (
-    <div className="bg-primary relative overflow-hidden pt-10 pb-16 text-white">
+    <div className="bg-primary relative overflow-hidden pt-10 pb-16 text-white lg:hidden">
               <div className="flex justify-center pt-10">
           <div className="lg:hidden">
             <select
@@ -37,6 +39,9 @@ const Team_Mobile = () => {
               <option className="text-black bg-none" value="management">
                 ועד מנהל
               </option>
+              <option className="text-black bg-none" value="officials">
+                בעלי תפקידים
+              </option>
             </select>
           </div>
         </div>
@@ -49,11 +54,11 @@ const Team_Mobile = () => {
               <div key={key}>
                 <Image
                   src={data.image}
-                  className=" w-[120px] h-[120px] block object-cover mx-auto"
+                  className=" w-[120px] h-[120px] block object-cover mx-auto rounded-full"
                   alt={data.name}
                 />
                 <div className="py-2">
-                  <h2 className="text-2xl text-center font-inter font-black">
+                  <h2 className="text-xl text-center font-inter font-openSans font-black ">
                     {data.name}
                   </h2>
                   <h2 className="text-lg text-center font-inter font-medium">

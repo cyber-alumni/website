@@ -49,7 +49,7 @@ const UnitsFieldsServices = () => {
                 </div>
             </div>
             {/* */}
-            <div className="relative">
+            <div className="relative" id={'fields'}>
                 <div className="container font-openSans gap-6 mt-auto lg:mt-[28%] xl:mt-[25%] 2xl:mt-[20%]   grid grid-cols-5">
                     {communityData.map((data, key) => (
                         <>
@@ -77,36 +77,39 @@ const UnitsFieldsServices = () => {
             </div>
             <div className="flex mt-auto flex-col lg:flex-row  items-end  text-white  justify-center"> {/*add pb-1 if needed padding*/}
                 <div
-                    className="bg-[#001767] relative px-16 flex flex-col justify-center items-end h-[474px] basis-[35%]">
-                    <h2 className="text-4xl  font-openSans font-bold">עבור המערך</h2>
-                    <p className="text-lg pt-2 w-full 2xl:w-[70%]]  font-normal font-openSans text-right">
-                        אין זה ראוי העמותה תשמר ותטפח את המורשת ואת הערכים אשר מושרשים
-                        במערך. העמותה מעודדת ומעודדת פעילויות מילואים שונות, כמו כן עובדת עם
-                        מערכי החינוך והמורשת ביחידות על מנת להנגיש לכלל החברה את פעילותיה.
+                    className="bg-[#001767] relative px-16 flex flex-col items-end h-[474px] basis-[35%]">
+                    <h2 className="text-4xl pt-36 font-openSans font-bold">עבור הבוגרים</h2>
+                    <p className="text-lg rtl pt-2 w-full 2xl:w-[70%]]  font-normal font-openSans text-right">
+                        הפעילויות אשר העמותה יוזמת עבור הבוגרים שלה כוללים בראש
+                        ובראשונה ייעוץ והכוונה למשתחררים אשר מתלבטים באיזה אפיק לבחור,
+                        בדגש על עולם היזמות, בגלל מורכבותו. בנוסף שימור הקשר -
+                        הנטוורקינג וההדדיות, הינם אבני יסוד בפעילויות העמותה השוטפות.
                     </p>
                     <div className="absolute left-0 ">
                         <Image src={vector} alt="f"/>
                     </div>
                 </div>
                 <div
-                    className="bg-[#001354] w-full flex px-6 flex-col justify-center items-start  basis-[30%] h-[474px] ">
-                    <h2 className="text-4xl text-right 2xl:w-[80%] w-full  font-openSans font-bold">
-                        עבור המערך
+                    className="bg-[#001354] w-full flex px-6 flex-col items-start  basis-[30%] h-[474px] ">
+                    <h2 className="text-4xl pt-36 text-right 2xl:w-[85%] w-full  font-openSans font-bold">
+                        עבור הקהילה
                     </h2>
-                    <p className="text-lg pt-2 text-right  w-full 2xl:w-[80%] font-normal font-openSans">
-                        אין זה ראוי העמותה תשמר ותטפח את המורשת ואת הערכים אשר מושרשים
-                        במערך. העמותה מעודדת ומעודדת פעילויות מילואים שונות, כמו כן עובדת עם
-                        מערכי החינוך והמורשת ביחידות על מנת להנגיש לכלל החברה את פעילותיה.
+                    <p className="text-lg rtl pt-2 text-right  w-full 2xl:w-[85%] font-normal font-openSans">
+                        העמותה מתכללת מגוון פעילויות אשר הבוגרים תורמים מהידע ומהערכים
+                        שלהם חזרה לחברה הישראלית. זה מתחיל בבתי הספר ובתנועות הנוער,
+                        ממשיך בהסברה לתקשורת, ונגמר במתן עזרה ותמיכה באירועי סייבר בזמן
+                        אמת לגופים אשר נזקקים לכך ברגע האמת.
                     </p>
                 </div>
-                <div className="bg_2 flex px-6 flex-col justify-center items-start   basis-[35%] h-[474px]">
-                    <h2 className="text-4xl  2xl:w-[80%] w-full text-right font-openSans font-bold">
+                <div className="bg_2 flex px-6 flex-col items-start basis-[35%] h-[474px]">
+                    <h2 className="text-4xl pt-36 2xl:w-[85%] w-full text-right font-openSans font-bold">
                         עבור המערך
                     </h2>
-                    <p className="text-lg pt-2  w-full 2xl:w-[80%] text-right  font-normal font-openSans">
+                    <p className="text-lg pt-2 rtl  w-full 2xl:w-[85%] text-right  font-normal font-openSans">
                         אין זה ראוי העמותה תשמר ותטפח את המורשת ואת הערכים אשר מושרשים
-                        במערך. העמותה מעודדת ומעודדת פעילויות מילואים שונות, כמו כן עובדת עם
-                        מערכי החינוך והמורשת ביחידות על מנת להנגיש לכלל החברה את פעילותיה.
+                        במערך. העמותה מעודדת ומעודדת פעילויות מילואים שונות, כמו כן
+                        עובדת עם מערכי החינוך והמורשת ביחידות על מנת להנגיש לכלל החברה
+                        את פעילותיה.
                     </p>
                 </div>
             </div>

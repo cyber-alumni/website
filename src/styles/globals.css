@@ -59,4 +59,39 @@ div#__next {
   .bg-gradient {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   }
+
+.collapse-button {
+  /*margin: auto;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eaeaea;
+  color: #333333;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  .close-button {
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .close-button i {
+    margin-left: 5px;
+  }
+
+  .fa-chevron-down {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .fa-chevron-down.rotate {
+    transform: rotate(180deg);
+  }
 }

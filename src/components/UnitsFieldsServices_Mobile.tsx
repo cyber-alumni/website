@@ -44,7 +44,7 @@ const UnitsFieldsServices_Mobile = () => {
           <UnitCardMobile name="מרכז לוחמה אלקטרונית" png={electronic}/>
         </div>
       </div>
-      <div className=" lg:hidden services min-w-[100vw] relative    py-10 ">
+      <div className=" lg:hidden services min-w-[100vw] relative    py-10 " id={'fields_m'}>
         <Swiper
             dir={"rtl"}
           slidesPerView={3}

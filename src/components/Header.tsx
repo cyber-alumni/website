@@ -17,7 +17,7 @@ const Header = () => {
               <button className="btn_primary">בוגרים? לחצו להרשמה</button>
             </li>
             <li>
-              <Link href={'#why_us'}>למה להצטרף</Link>
+              <Link href={'#fields'}>למה להצטרף</Link>
             </li>
             <li>
               <Link href={'#intro'}>אודות העמותה</Link>

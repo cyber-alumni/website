@@ -24,6 +24,7 @@ import or from '@/svg/team/management/or.svg';
 import ron from '@/svg/team/matzov/ron.jpeg'
 import yair from '@/svg/team/matzov/yair.jpg'
 import nir from '@/svg/team/matzov/nir.jpeg'
+import orri from '@/svg/team/matzov/orri.jpeg'
 //officials
 import abutbul from '@/svg/team/officials/abutbul.jpeg'
 import jossef from '@/svg/team/officials/jossef.jpeg'
@@ -34,6 +35,7 @@ export const teamData: {
   leaders: TeamMeb[];
   management: TeamMeb[];
   matzov: TeamMeb[];
+  officials: TeamMeb[];
 } = {
   leaders: [
     {
@@ -95,6 +97,11 @@ export const teamData: {
       bio: '',
       image: yair,
     },
+    {
+      name: 'אורי שטרייכמן',
+      bio: '',
+      image: orri
+    },
   ],
   officials: [
     {
@@ -141,21 +148,25 @@ export const EventsData: Events[] = [
 
 import hands_light from '../svg/services/hands_light.svg';
 import desk_folders from '../svg/services/desk_folders.svg';
-import rich_man from '../svg/services/rich_man.svg';
+// import rich_man from '../svg/services/rich_man.svg';
+import matzov_ent from '../svg/services/matzov_ent.jpeg'
 import teacher_class from '../svg/services/teacher_class.svg';
+import networking from '../svg/services/networking.png'
 
 export const communityData: any[] = [
   {
     image: hands_light,
     name: 'התנדבות מקצועית בקהילה',
+    link: '',
   },
   {
-    image: hands_light,
+    image: networking,
     name: 'כנסי נטוורקינג',
   },
   {
-    image: rich_man,
+    image: matzov_ent,
     name: 'פורום יזמות',
+    link: 'https://www.linkedin.com/company/mtz-entrepreneur-forum/'
   },
   {
     image: desk_folders,
