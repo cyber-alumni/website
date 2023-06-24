@@ -34,7 +34,7 @@ const Team_Mobile = () => {
                 הנהלת העמותה
               </option>
               <option className="text-black bg-none" value="matzov">
-                ארגון בוגרי מצו"ב
+                ארגון בוגרי מצו&quot;ב
               </option>
               <option className="text-black bg-none" value="management">
                 ועד מנהל
