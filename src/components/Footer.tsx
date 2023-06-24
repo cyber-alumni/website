@@ -58,7 +58,9 @@ const Footer = () => {
           </li>
                     */}
           <li>
+            <a href={"https://hub.cyber-alumni.org/register"}>
             <button className="btn_primary">בוגרים? הצטרפו בחינם</button>
+            </a>
           </li>
 
         </ul>
@@ -67,9 +69,11 @@ const Footer = () => {
       <div className="px-4 lg:hidden">
         <div className=" relative z-50 flex items-center justify-between">
           <div>
+            <a href={"https://hub.cyber-alumni.org/register"}>
             <button className="btn_primary text-xs">
-              בוגרים? הצטרפו בחינם
+          בוגרים? הצטרפו בחינם
             </button>
+            </a>
           </div>
           <svg
             width={140}

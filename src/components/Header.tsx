@@ -14,7 +14,7 @@ const Header = () => {
         <div>
           <ul className="flex items-center text-base  font-medium  gap-x-6">
             <li>
-              <button className="btn_primary">בוגרים? לחצו להרשמה</button>
+              <a href={"https://hub.cyber-alumni.org/register"}><button className="btn_primary">בוגרים? לחצו להרשמה</button></a>
             </li>
             <li>
               <Link href={'#fields'}>למה להצטרף</Link>
