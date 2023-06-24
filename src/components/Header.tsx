@@ -4,7 +4,7 @@ import { LogoDark } from './Logo';
 
 const Header = () => {
   return (
-    <header className=" hidden lg:block container py-6 bg-white">
+    <header className="hidden lg:block container py-6 px-36 bg-white">
       <div className="flex items-center justify-between">
         <div className=" order-last">
           <Link href={'/'}>
@@ -14,13 +14,13 @@ const Header = () => {
         <div>
           <ul className="flex items-center text-base  font-medium  gap-x-6">
             <li>
-              <button className="btn_primary">בוגרים? הצטרפו בחינ6</button>
+              <button className="btn_primary">בוגרים? לחצו להרשמה</button>
             </li>
             <li>
-              <Link href={'#why_us'}>למה להצטרף</Link>
+              <Link href={'#fields'}>למה להצטרף</Link>
             </li>
             <li>
-              <Link href={'#אודות_מערך_הסייבר'}>אודות מערך הסייבר</Link>
+              <Link href={'#intro'}>אודות העמותה</Link>
             </li>
           </ul>
         </div>

@@ -1,9 +1,3 @@
-type Team = {
-  name: string;
-  job: string;
-  img: string;
-};
-
 type Events = {
   name: string;
   date: string;
@@ -16,117 +10,119 @@ type TeamMeb = {
   image: string;
 };
 
-export const teamMembers: Team[] = [
-  {
-    name: 'עמיתי בן-שושן',
-    job: 'ועד מנהל',
-    img: '/image/team/2.png',
-  },
-  {
-    name: 'אור שוורץ',
-    job: 'ועד מנהל',
-    img: '/image/team/1.png',
-  },
-  {
-    name: 'אור שוורץ',
-    job: 'ועד מנהל',
-    img: '/image/team/3.png',
-  },
-  {
-    name: 'אור שוורץ',
-    job: 'ועד מנהל',
-    img: '/image/team/4.png',
-  },
-  {
-    name: 'אור שוורץ',
-    job: 'ועד מנהל',
-    img: '/image/team/5.png',
-  },
-];
 
-import teamMeb1 from '../svg/team/1.svg';
-import teamMeb2 from '../svg/team/2.svg';
-import teamMeb3 from '../svg/team/3.svg';
-import teamMeb4 from '../svg/team/directors/1.svg';
-import teamMeb5 from '../svg/team/directors/2.svg';
-import teamMeb6 from '../svg/team/directors/3.svg';
-import teamMeb7 from '../svg/team/directors/4.svg';
-import teamMeb8 from '../svg/team/directors/5.svg';
+import matan from '../svg/team/leaders/matan.svg';
+import assaf from '../svg/team/leaders/assaf.svg';
+import danny from '../svg/team/leaders/danny.svg';
+import amitai from '@/svg/team/management/amitai.svg';
+import amir from '@/svg/team/management/amir.svg';
+import idan from '@/svg/team/management/idan.svg';
+import hila from '@/svg/team/management/hila.svg';
+import or from '@/svg/team/management/or.svg';
+// TODO: convert to svg
+//matzov
+import ron from '@/svg/team/matzov/ron.jpeg'
+import yair from '@/svg/team/matzov/yair.jpg'
+import nir from '@/svg/team/matzov/nir.jpeg'
+import orri from '@/svg/team/matzov/orri.jpeg'
+//officials
+import abutbul from '@/svg/team/officials/abutbul.jpeg'
+import jossef from '@/svg/team/officials/jossef.jpeg'
+import yuval from '@/svg/team/officials/yuval.jpeg'
+import shay from '@/svg/team/officials/shay.jpeg'
 
-export const teamMobileData: {
+export const teamData: {
+  leaders: TeamMeb[];
   management: TeamMeb[];
+  matzov: TeamMeb[];
   officials: TeamMeb[];
-  directors: TeamMeb[];
 } = {
-  management: [
+  leaders: [
     {
       name: 'מתן דוברושין',
       bio: 'מנכ”ל העמותה',
-      image: teamMeb1,
+      image: matan,
     },
     {
       name: 'אסף נקש',
       bio: 'יו”ר העמותה',
-      image: teamMeb2,
+      image: assaf,
     },
     {
       name: 'דני ברן',
       bio: 'נשיא העמותה',
-      image: teamMeb3,
+      image: danny,
+    },
+  ],
+  management: [
+    {
+      name: 'אמיתי בן שושן',
+      bio: '',
+      image: amitai,
+    },
+    {
+      name: 'אמיר קריידן',
+      bio: '',
+      image: amir,
+    },
+    {
+      name: 'עידן פטלסקי',
+      bio: '',
+      image: idan,
+    },
+    {
+      name: 'הילה אוחנה ברומר',
+      bio: '',
+      image: hila,
+    },
+    {
+      name: 'אור שוורץ',
+      bio: '',
+      image: or,
+    },
+  ],
+  matzov: [
+    {
+      name: 'ניר עומר',
+      bio: '',
+      image: nir,
+    },
+    {
+      name: 'רון ארבל',
+      bio: '',
+      image: ron,
+    },
+    {
+      name: 'יאיר לדיז׳נסקי',
+      bio: '',
+      image: yair,
+    },
+    {
+      name: 'אורי שטרייכמן',
+      bio: '',
+      image: orri
     },
   ],
   officials: [
     {
-      name: 'אור אפשטיין',
-      bio: 'רכז התנדבויות',
-      image: teamMeb4,
-    },
-    {
       name: 'שי שוורץ',
-      bio: 'מדיה ודיגיטל',
-      image: teamMeb5,
+      bio: '',
+      image: shay,
     },
     {
       name: 'מתן אבוטבול',
-      bio: 'רכז התנדבויות',
-      image: teamMeb6,
+      bio: '',
+      image: abutbul,
     },
     {
       name: 'יובל חשביה',
-      bio: 'הסברה וחינוך',
-      image: teamMeb7,
+      bio: '',
+      image: yuval,
     },
     {
       name: 'יוסף הרוש',
-      bio: 'מדיה וקוד פתוח',
-      image: teamMeb8,
-    },
-  ],
-  directors: [
-    {
-      name: 'אור אפשטיין',
-      bio: 'רכז התנדבויות',
-      image: teamMeb4,
-    },
-    {
-      name: 'שי שוורץ',
-      bio: 'מדיה ודיגיטל',
-      image: teamMeb5,
-    },
-    {
-      name: 'מתן אבוטבול',
-      bio: 'רכז התנדבויות',
-      image: teamMeb6,
-    },
-    {
-      name: 'יובל חשביה',
-      bio: 'הסברה וחינוך',
-      image: teamMeb7,
-    },
-    {
-      name: 'יוסף הרוש',
-      bio: 'מדיה וקוד פתוח',
-      image: teamMeb8,
+      bio: '',
+      image: jossef,
     },
   ],
 };
@@ -135,102 +131,49 @@ import img1 from '../svg/event/event1.svg';
 import img2 from '../svg/event/event2.svg';
 
 export const EventsData: Events[] = [
-  {
-    name: 'כנס בוגרי מצו”ב 2023',
-    date: '26 פברואר, 2023',
-    des: 'האירוע השנתי של בוגרי יחידת מצו”ב לשנת 2023. על הפרק הרצאות מבוגרי היחידההאירוע בחסות GotFriends ובנק לאומי',
-    img: img1,
-  },
-  {
-    name: 'נותנים במה',
-    date: '26 פברואר, 2023',
-    des: 'העמותה מארגנת מיט-אפים מקצועיים שמטרתם לתת במה לחבריה להציג מחקרים ועבודות שביצעו, תוך כדי העשרת שאר חברי העמותה והקהל הרחב',
-    img: img2,
-  },
+  // {
+  //   name: 'כנס בוגרי מצו”ב 2023',
+  //   date: '26 פברואר, 2023',
+  //   des: 'האירוע השנתי של בוגרי יחידת מצו”ב לשנת 2023. על הפרק הרצאות מבוגרי היחידההאירוע בחסות GotFriends ובנק לאומי',
+  //   img: img1,
+  // }
+
+  // , {
+  //   name: 'נותנים במה',
+  //   date: '26 פברואר, 2023',
+  //   des: 'העמותה מארגנת מיט-אפים מקצועיים שמטרתם לתת במה לחבריה להציג מחקרים ועבודות שביצעו, תוך כדי העשרת שאר חברי העמותה והקהל הרחב',
+  //   img: img2,
+  // },
 ];
 
-import comminityDataimg1 from '../svg/services/1.svg';
-import comminityDataimg2 from '../svg/services/2.svg';
-import comminityDataimg3 from '../svg/services/3.svg';
-import comminityDataimg4 from '../svg/services/4.svg';
-import comminityDataimg5 from '../svg/services/5.svg';
+import hands_light from '../svg/services/hands_light.svg';
+import desk_folders from '../svg/services/desk_folders.svg';
+// import rich_man from '../svg/services/rich_man.svg';
+import matzov_ent from '../svg/services/matzov_ent.jpeg'
+import teacher_class from '../svg/services/teacher_class.svg';
+import networking from '../svg/services/networking.png'
 
 export const communityData: any[] = [
   {
-    image: comminityDataimg1,
-    name: 'פרויקטים לקהילה',
+    image: hands_light,
+    name: 'התנדבות מקצועית בקהילה',
+    link: '',
   },
   {
-    image: comminityDataimg2,
-    name: 'נטוורקינג',
+    image: networking,
+    name: 'כנסי נטוורקינג',
   },
   {
-    image: comminityDataimg3,
-    name: 'חיבור למשקיעים',
+    image: matzov_ent,
+    name: 'פורום יזמות',
+    link: 'https://www.linkedin.com/company/mtz-entrepreneur-forum/'
   },
   {
-    image: comminityDataimg4,
-    name: 'הכשרה וקורסים',
+    image: desk_folders,
+    name: 'הטבות לבוגרים',
   },
   {
-    image: comminityDataimg4,
-    name: 'שירותי ייעוץ בחינם',
+    image: teacher_class,
+    name: 'שימור הקשר עם היחידות',
   },
 ];
-
-import temMangement1 from '../svg/team/management/manger1.svg';
-import temMangement2 from '../svg/team/management/manger2.svg';
-import temMangement3 from '../svg/team/management/manger3.svg';
-
-import boardOfDerector1 from '../svg/team/directors/1.svg';
-import boardOfDerector2 from '../svg/team/directors/2.svg';
-import boardOfDerector3 from '../svg/team/directors/3.svg';
-import boardOfDerector4 from '../svg/team/directors/4.svg';
-import boardOfDerector5 from '../svg/team/directors/5.svg';
-
-export const teamData = {
-  manement: [
-    {
-      name: 'דני ברן',
-      role: 'נשיא העמותה',
-      profileImage: temMangement1,
-    },
-    {
-      name: 'אסף נקש',
-      role: 'יו”ר העמותה',
-      profileImage: temMangement2,
-    },
-    {
-      name: 'מתן דוברושין',
-      role: 'מנכ”ל העמותה',
-      profileImage: temMangement3,
-    },
-  ],
-  directors: [
-    {
-      name: 'עמיתי בן-שושן',
-      role: 'עמיתי בן-שושן',
-      profileImage: boardOfDerector1,
-    },
-    {
-      name: 'אור שוורץ',
-      role: 'ועד מנהל',
-      profileImage: boardOfDerector2,
-    },
-    {
-      name: 'הילה ברומר',
-      role: 'ועד מנהל',
-      profileImage: boardOfDerector3,
-    },
-    {
-      name: 'עידן פטלסקי',
-      role: 'ועד מנהל',
-      profileImage: boardOfDerector4,
-    },
-    {
-      name: 'אמיר קריידן',
-      role: 'ועד מנהל',
-      profileImage: boardOfDerector5,
-    },
-  ],
-};

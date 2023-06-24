@@ -7,9 +7,9 @@ import e2 from '../img/e2.png';
 const Events = () => {
   return (
     <>
-      <section className="relative px-2 lg:block overflow-hidden py-16 bg-[#d9d9d9] ">
+      <section className={"relative px-2 overflow-hidden py-16 bg-[#d9d9d9] " + (EventsData.length ? "lg:block" : "hidden")}>
         <div className="container relative px-0  z-50 space-y-6">
-          <h2 className="text-right pr-2 text-2xl  font-extrabold font-openSens">
+          <h2 className="text-right pr-2 text-2xl  font-extrabold font-openSans">
             לוח אירועים
           </h2>
           {EventsData.map((data, i) => (
@@ -18,19 +18,19 @@ const Events = () => {
               className="flex lg:max-h-[240px] px-0 overflow-hidden lg:pl-5 pr-0 rounded-2xl border bg-[#ffff] border-[#D9D9D9] items-center justify-between"
             >
               <div className=" hidden lg:block">
-                <button className="px-5  text-base font-bold font-inter py-2.5 rounded-3xl border border-black">
+                <button className="px-5 hover:bg-blue-200 text-base font-bold font-inter py-2.5 rounded-3xl border border-black">
                   הרשמה
                 </button>
               </div>
               <div className="flex  w-full pb-5 md:pb-0 lg:max-w-[80%]  flex-col md:flex-row gap-3 items-center">
                 <div className=" w-full text-right px-5 lg:px-0 order-last md:order-first ">
-                  <h2 className=" text-xl md:text-2xl  font-extrabold font-openSens">
+                  <h2 className=" text-xl md:text-2xl  font-extrabold font-openSans">
                     {data.name}
                   </h2>
-                  <h4 className="text-base py-2 font-normal text-black font-openSens">
+                  <h4 className="text-base py-2 font-normal text-black font-openSans">
                     {data.date}
                   </h4>
-                  <p className=" text-base md:text-xl text-right font-openSens font-medium">
+                  <p className=" text-base md:text-xl text-right font-openSans font-medium">
                     {data.des}
                   </p>
                 </div>
@@ -42,9 +42,10 @@ const Events = () => {
               </div>
             </div>
           ))}
-          <h2 className=" text-base lg:pl-10 font-bold underline">
+          <a href={"https://www.meetup.com/cyber-almuni/"}><h2 className=" text-base lg:pl-10 font-bold underline">
             לעוד אירועים
           </h2>
+          </a>
         </div>
         <div className="absolute z-10 top-0 left-0">
           <Image

@@ -5,12 +5,12 @@ import { LogoWhite } from './Logo';
 const Footer = () => {
   const socialLinks = [
     {
-      label: 'YouTube',
-      href: '',
+      label: 'Facebook',
+      href: 'https://www.facebook.com/cyberAlumniIsrael/',
     },
     {
       label: 'Meetup',
-      href: '',
+      href: 'https://www.meetup.com/cyber-almuni/',
     },
     {
       label: 'LinkedIn',
@@ -18,8 +18,8 @@ const Footer = () => {
     },
 
     {
-      label: 'info@icda.co.il',
-      href: '',
+      label: 'admin@cyber-alumni.org',
+      href: 'mailto:admin@cyber-alumni.org',
     },
   ];
 
@@ -32,45 +32,35 @@ const Footer = () => {
               <LogoWhite />
             </Link>
           </li>
-          <li className="text-base font-openSens font-bold">
-            כל הזכויות שמורות 2023
+          <li className="text-base font-openSans font-bold">
+            כל הזכויות שמורות 2023 ©
           </li>
         </ul>
         <ul className="block text-right space-y-2">
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>YouTube</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>Meetup</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>LinkedIn</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>Facebook</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>info@icda.co.il</Link>
-          </li>
+          {socialLinks.map((data, key) => (
+            <li key={key} className="text-base font-openSans font-bold">
+              <Link href={data.href}>{data.label}</Link>
+            </li>
+          ))}
         </ul>
         <ul className="block text-right space-y-2">
           <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>אירועים</Link>
-          </li>
-          <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>מדיניות פרטיות</Link>
+            <Link href={'/'}>תקנון העמותה</Link>
           </li>
         </ul>
         <ul className="block text-right space-y-3">
-          <li className="text-base font-openSens font-bold">
+          {/*
+          <li className="text-base font-openSans font-bold">
             <Link href={'/'}>למה להצטרף</Link>
           </li>
-          <li className="text-base font-openSens font-bold">
+          <li className="text-base font-openSans font-bold">
             <Link href={'/'}>השותפים שלנו</Link>
           </li>
+                    */}
           <li>
             <button className="btn_primary">בוגרים? הצטרפו בחינם</button>
           </li>
+
         </ul>
       </div>
 
@@ -102,19 +92,18 @@ const Footer = () => {
         <div className="flex relative z-50 items-center pt-5 justify-between">
           <div>
             <ul className=" text-right space-y-2">
-              <li className=" text-sm text-white font-openSens font-bold">
-                אירועים
+              <li className=" text-sm text-white font-openSans font-bold">
+                תקנון העמותה
               </li>
-              <li className=" text-sm text-white font-openSens font-bold">
-                מדיניות פרטיות{' '}
-              </li>
-              <li className=" text-sm text-white font-openSens font-bold">
+              {/*
+              <li className=" text-sm text-white font-openSans font-bold">
                 למה להצטרף
               </li>
-              <li className=" text-sm text-white font-openSens font-bold">
+              <li className=" text-sm text-white font-openSans font-bold">
                 השותפים שלנו
               </li>
-              <li className=" text-sm text-white font-openSens font-bold">
+              */}
+              <li className=" text-sm text-white font-openSans font-bold">
                 כל הזכויות שמורות 2023{' '}
               </li>
             </ul>
@@ -124,7 +113,7 @@ const Footer = () => {
               {socialLinks.map((data, key) => (
                 <li
                   key={key}
-                  className="text-sm text-white text-right font-openSens font-bold"
+                  className="text-sm text-white text-right font-openSans font-bold"
                 >
                   <Link href={data.href}>{data.label}</Link>
                 </li>

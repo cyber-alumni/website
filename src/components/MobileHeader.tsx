@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
-import logo from '../image/logo.png';
-import Image from 'next/image';
 import Link from 'next/link';
 import { RxCross2 } from 'react-icons/rx';
 
 const Links = [
   {
     label: 'למה להצטרף',
-    href: '#why_us',
+    href: '#fields_m',
     targetSegment: null,
   },
   {
-    label: 'אודות_מערך_הסייבר',
-    href: '#אודות_מערך_הסייבר',
+    label: 'אודות העמותה',
+    href: '#intro',
     targetSegment: 'services',
   },
 ];
