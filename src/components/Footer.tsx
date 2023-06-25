@@ -14,7 +14,7 @@ const Footer = () => {
     },
     {
       label: 'LinkedIn',
-      href: '',
+      href: 'https://www.linkedin.com/company/cyber-alumni/',
     },
 
     {
@@ -45,7 +45,7 @@ const Footer = () => {
         </ul>
         <ul className="block text-right space-y-2">
           <li className="text-base font-openSens font-bold">
-            <Link href={'/'}>תקנון העמותה</Link>
+            <Link href={'https://docs.google.com/document/d/1x_dj-Z_IgihfF2dsVEDKGHioc8uDrq4s/edit?usp=sharing&ouid=102582153505104289891&rtpof=true&sd=true'}>תקנון העמותה</Link>
           </li>
         </ul>
         <ul className="block text-right space-y-3">
