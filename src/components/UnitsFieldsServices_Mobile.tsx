@@ -15,15 +15,14 @@ import agaf from '../svg/units/agaf.svg';
 import hativa from '../svg/units/hativa.svg';
 import electronic from '../svg/units/electronic.svg';
 import matzov from '../svg/units/matzov.svg';
+import prisma from '../svg/units/prisma.svg'
 
 const UnitCardMobile: React.FC<any> = ({name, png}) => (
-    <div
-        className="w-1/2 px-2 py-2 sm:flex-row items-center gap-2 contents float-right">
-        <span className="text-right font-openSans font-medium pr-2 w-2/3">
-            {name}
-        </span>
-        <Image src={png} alt={name} className="block pr-2 h-10"/>
-    </div>
+  <div className="w-full sm:w-1/2 px-2 py-2 sm:flex-row items-center gap-2 contents">
+    <span className="text-right font-openSans font-medium pr-2 w-2/3">{name}</span>
+    <Image src={png} alt={name} className="block pr-2 h-10 max-w-[47px]" />
+  </div>
+
 );
 const UnitsFieldsServices_Mobile = () => {
   // const units = [matzov, electronic, hativa, intelligence, operations];
@@ -39,9 +38,10 @@ const UnitsFieldsServices_Mobile = () => {
           <UnitCardMobile name="מרכז צופן ובטחון (מצו”ב)" png={matzov}/>
           <UnitCardMobile name="מרכז מבצעים להגנה" png={agaf}/>
         </div>
-        <div className="flex items-center justify-between float-right">
+        <div className="flex items-center justify-between">
           <p></p>
           <UnitCardMobile name="מרכז לוחמה אלקטרונית" png={electronic}/>
+          <UnitCardMobile name="מרכז פריזמה" png={prisma}/>
         </div>
       </div>
       <div className=" lg:hidden services min-w-[100vw] relative    py-10 " id={'fields_m'}>

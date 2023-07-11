@@ -8,6 +8,7 @@ import agaf from '../svg/units/agaf.svg';
 import hativa from '../svg/units/hativa.svg';
 import electronic from '../svg/units/electronic.svg';
 import matzov from '../svg/units/matzov.svg';
+import prisma from '../svg/units/prisma.svg'
 
 import {communityData} from "@/data";
 
@@ -23,7 +24,7 @@ const UnitCard: React.FC<CardProps> = ({name, png}) => (
         <h2 className="text-base w-full sm:w-[90%] text-center font-openSans font-bold">
             {name}
         </h2>
-        <Image src={png} alt={name} className="block"/>
+        <Image src={png} alt={name} className="block max-w-[45px]"/>
     </div>
 );
 
@@ -45,6 +46,7 @@ const UnitsFieldsServices = () => {
                     <div className="flex justify-center items-center gap-6">
                         <UnitCard name="מרכז מבצעים להגנה" png={agaf}/>
                         <UnitCard name="מרכז לוחמה אלקטרונית" png={electronic}/>
+                        <UnitCard name=" &nbsp;&nbsp;&nbsp; מרכז פריזמה " png={prisma}/>
                     </div>
                 </div>
             </div>
