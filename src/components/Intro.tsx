@@ -18,9 +18,14 @@ const Intro = () => {
             שונים ופעילויות סיוע מקצועי לגופים ועמותות ציבוריות
             בנושא ההגנה בסייבר
           </p>
-          <button className="btn_primary"  onClick={() => {
-      window.open("https://hub.cyber-alumni.org/register", "_blank");
-    }}>בוגרים? הצטרפו בחינם</button>
+          <button className="btn_primary" onClick={() => {
+            window.open("https://hub.cyber-alumni.org/", "_blank");
+          }}>להרשמה לניוזלטר</button>
+          <span className='pr-2'></span>
+          <button className="btn_primary" onClick={() => {
+            window.open("https://hub.cyber-alumni.org/register", "_blank");
+          }}>בוגרים? הצטרפו בחינם</button>
+
         </div>
       </div>
 
